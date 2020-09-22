@@ -294,11 +294,54 @@
 }
 
 #featured-speakers {
-  background: pink;
-  background-position: center;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-size: contain;
-  height: 60vh;
-  width: 100%;
+  h2 {
+    font-family: $fontFam2;
+    margin-top: 55px;
+    text-align: center;
+  }
+  .line {
+    border-top: 2px solid $orange;
+    width: 5%;
+    margin-left: 47.5%;
+  }
+  li{
+    @include mQ(3000px, 769px) {
+      @include grid(2, 5%);
+      margin-top: 60px;
+      padding-bottom: 10px;
+      &:nth-child(even){
+        margin-right: 15%;
+      }
+      &:nth-child(odd){
+        margin-left: 15%;
+      }
+      // height:  160px;
+      h4{
+        font-weight: bold;
+        font-size: .9rem;
+      }
+      small{
+        font-size: .5rem;
+        color: $orange;
+      }
+      hr{
+        width: 10%;;
+      }
+      p {
+        font-size: .7rem;
+      }
+      h4,
+      p {
+        margin-left: 10px;
+        
+      }
+    }
+    .flex-list{
+      display: flex;
+    }
+    img{
+      width:100px;
+      height: 100px;
+    }
+  }
 }

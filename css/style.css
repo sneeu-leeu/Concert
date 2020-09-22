@@ -467,12 +467,60 @@ a {
   }
 }
 
-#featured-speakers {
-  background: pink;
-  background-position: center;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-size: contain;
-  height: 60vh;
-  width: 100%;
+#featured-speakers h2 {
+  font-family: "cocogoosedemibold";
+  margin-top: 55px;
+  text-align: center;
+}
+#featured-speakers .line {
+  border-top: 2px solid #ec5242;
+  width: 5%;
+  margin-left: 47.5%;
+}
+@media screen and (max-width: 3000px) and (min-width: 769px) {
+  #featured-speakers li {
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 32.5%;
+    margin-top: 60px;
+    padding-bottom: 10px;
+  }
+  #featured-speakers li:first-child {
+    margin-left: 15%;
+  }
+  #featured-speakers li:nth-child(2n) {
+    margin-right: 15%;
+  }
+  #featured-speakers li:nth-child(even) {
+    margin-right: 15%;
+  }
+  #featured-speakers li:nth-child(odd) {
+    margin-left: 15%;
+  }
+  #featured-speakers li h4 {
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  #featured-speakers li small {
+    font-size: 0.5rem;
+    color: #ec5242;
+  }
+  #featured-speakers li hr {
+    width: 10%;
+  }
+  #featured-speakers li p {
+    font-size: 0.7rem;
+  }
+  #featured-speakers li h4,
+#featured-speakers li p {
+    margin-left: 10px;
+  }
+}
+#featured-speakers li .flex-list {
+  display: flex;
+}
+#featured-speakers li img {
+  width: 100px;
+  height: 100px;
 }
