@@ -175,11 +175,12 @@ a {
 }
 
 #bot-nav {
+  height: 50px;
   display: none;
   margin-top: 0;
   padding-left: 14%;
 }
-@media screen and (max-width: 2000px) and (min-width: 769px) {
+@media screen and (max-width: 3000px) and (min-width: 769px) {
   #bot-nav {
     display: block;
   }
@@ -225,21 +226,164 @@ a {
   font-size: 2rem;
 }
 
-.bg-section {
-  margin-top: 70px;
-  background-image: url(https://brandcdn.exacttarget.com/blog/uploads/2017/01/Screen-Shot-2017-01-23-at-11.37.38-AM.png);
-  background-position: center center;
+.main-bg {
+  z-index: 1;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(https://cdn.cp.adobe.io/content/2/dcx/a708b1d2-528f-45b0-ad10-31259dd4db79/rendition/preview.jpg/version/1/format/jpg/dimension/width/size/1200);
+  background-position: top;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
+  height: 130vh;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 668px) {
+  .main-bg {
+    height: 90vh;
+  }
+}
+.main-bg .bg-section {
+  z-index: 3;
   height: 30vh;
-}
-.bg-section h2 {
-  bottom: 0;
-  left: 0;
-}
-.bg-section h2:after {
-  content: "";
+  width: 70%;
   display: block;
-  clear: both;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .main-bg .bg-section {
+    height: 20vh;
+  }
+}
+.main-bg .bg-section:after {
+  content: "";
+  z-index: 2;
+  background-image: url(https://i.pinimg.com/originals/e0/fe/a0/e0fea00cb18c59520ae24b30b2b9ee97.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: cover;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+.main-bg #main-content {
+  padding-left: 14%;
+  z-index: 7;
+}
+.main-bg #main-content h4 {
+  z-index: 7;
+  position: relative;
+  color: #ec5242;
+  font-family: "Lato", sans-serif;
+  font-size: 2.9rem;
+  margin-top: -55px;
+}
+@media screen and (max-width: 785px) {
+  .main-bg #main-content h4 {
+    font-size: 1.8rem;
+    margin-top: -45px;
+  }
+}
+.main-bg #main-content .text-bg {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRyhwCqEPispuf2S-NqU_dGt4nXvQ8c2GvT-Q&usqp=CAU);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.main-bg #main-content .text-bg h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 4.2rem;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 0;
+  line-height: 4.2rem;
+  letter-spacing: 5px;
+}
+@media screen and (max-width: 668px) {
+  .main-bg #main-content .text-bg h2 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (max-width: 501) and (min-width: 768px) {
+  .main-bg #main-content .text-bg h2 {
+    font-size: 2.2rem;
+  }
+}
+.main-bg #main-content .box-on-screen {
+  font-family: "Lato", sans-serif;
+  z-index: 2;
+  background-color: #b3b3b3;
+  width: 55%;
+  border: 2px solid white;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 500px) {
+  .main-bg #main-content .box-on-screen {
+    width: 80%;
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-bg #main-content .box-on-screen {
+    width: 80%;
+  }
+}
+.main-bg #main-content .box-on-screen p {
+  margin: 0 0 5px 0;
+  margin-left: 10%;
+  font-size: 0.6rem;
+}
+.main-bg #main-content p.date {
+  margin-top: 20px;
+  font-family: "cocogoosedemibold";
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 500px) {
+  .main-bg #main-content p.date {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-bg #main-content p {
+    font-size: 0.5rem;
+  }
+}
+
+#main-program {
+  background-image: url(https://cdn.cp.adobe.io/content/2/dcx/9201c10f-8b09-4fa4-a15b-cb0b102da3cb/rendition/preview.jpg/version/1/format/jpg/dimension/width/size/1200);
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  height: 60vh;
+  width: 100%;
+  margin-top: -30px;
+}
+#main-program h2 {
+  font-family: "cocogoosedemibold";
+  margin-top: 55px;
+  color: white;
+  text-align: center;
+}
+#main-program .line {
+  border-top: 2px solid #ec5242;
+  width: 5%;
+  margin-left: 47.5%;
+}
+
+#featured-speakers {
+  background: pink;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  height: 60vh;
+  width: 100%;
 }

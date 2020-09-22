@@ -9,9 +9,10 @@
   display: none;
   background: rgb(0, 0, 0);
   background: linear-gradient(
-      49deg,
-      rgba(15.3, 16.5, 19.2, 0.8152424942263279) 54%,
-      rgba(15.3, 16.5, 19.2, 0.8152424942263279) 54%);
+    49deg,
+    rgba(15.3, 16.5, 19.2, 0.8152424942263279) 54%,
+    rgba(15.3, 16.5, 19.2, 0.8152424942263279) 54%
+  );
   ul {
     margin-left: 72%;
     margin-right: 6%;
@@ -34,9 +35,10 @@
 }
 
 #bot-nav {
-  @include mQ(2000px, 769px) {
+  @include mQ(3000px, 769px) {
     display: block;
   }
+  height: 50px;
   display: none;
   margin-top: 0;
   padding-left: $pagePadL;
@@ -45,55 +47,186 @@
     width: 60px;
     margin-top: -10px;
   }
-  ul{
+  ul {
     margin-left: 29%;
   }
-  li{
+  li {
     float: left;
     align-content: center;
     font-size: 0.6rem;
     margin-right: 7%;
     margin-top: 8px;
-    
-    &:first-child{
-      color: #ec5242;
+
+    &:first-child {
+      color: $orange;
     }
-    &:last-child{
+    &:last-child {
       margin-left: 3%;
       margin-top: 0;
       padding: 5px 7px;
-      border: 3px solid #ec5242;
+      border: 3px solid $orange;
     }
   }
 }
 
-#small-nav{
+#small-nav {
   position: relative;
-  @include mQ(768px){
+  @include mQ(768px) {
     display: block;
   }
   display: none;
-  i{ 
+  i {
     position: absolute;
     top: 20px;
     left: 20px;
     font-size: 2rem;
   }
-}// header End
+} // header End
 
-// background section
-
-.bg-section{
-  margin-top: 70px; 
-  background-image: url(https://brandcdn.exacttarget.com/blog/uploads/2017/01/Screen-Shot-2017-01-23-at-11.37.38-AM.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height:30vh;
-  h2{
-    bottom: 0;
-    left: 0;
-    @include clearFix;
+.main-bg {
+  @include mQ(668px) {
+    height: 90vh
   }
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .7), rgb(255, 255, 255, .7)), url(https://cdn.cp.adobe.io/content/2/dcx/a708b1d2-528f-45b0-ad10-31259dd4db79/rendition/preview.jpg/version/1/format/jpg/dimension/width/size/1200);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 130vh;
+    margin-bottom: 0;
+  // background section
+  .bg-section {
+    @include mQ(768px) {
+      height: 20vh;
+    }
+    z-index: 3;
+    height: 30vh;
+    width: 70%;
+    display: block;
+    position: relative;
+    &:after {
+      content: "";
+      z-index: 2;
+      background-image: url(https://i.pinimg.com/originals/e0/fe/a0/e0fea00cb18c59520ae24b30b2b9ee97.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: local;
+      background-size: cover;
+      opacity: 0.4;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+    }
+  }
+  #main-content {
+    padding-left: $pagePadL;
+    z-index: 7;
+    h4 {
+      @include mQ(785px) {
+        font-size: 1.8rem;
+        margin-top: -45px;
+      }
+      z-index: 7;
+      position: relative;
+      color: $orange;
+      font-family: $fontFam1;
+      font-size: 2.9rem;
+      margin-top: -55px;
+    }
+    .text-bg {
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRyhwCqEPispuf2S-NqU_dGt4nXvQ8c2GvT-Q&usqp=CAU);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      h2 {
+        @include mQ(668px) {
+          font-size: 1.8rem;
+          line-height: 2rem;
+        }
+        @include mQ(501, 768px) {
+          font-size: 2.2rem;
+        }
+        font-family: $fontFam1;
+        font-size: 4.2rem;
+        font-weight: bold;
+        margin: 0;
+        padding-bottom: 0;
+        line-height: 4.2rem;
+        letter-spacing: 5px;
+      }
+    }
+    .box-on-screen {
+      @include mQ(500px) {
+        width: 80%;
+        font-size: 0.5rem;
+      }
+      @include mQ(768px) {
+        width: 80%;
+      }
+      font-family: $fontFam1;
+      z-index: 2;
+      background-color: #b3b3b3;
+      width: 55%;
+      border: 2px solid white;
+      margin-top: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      p {
+        margin: 0 0 5px 0;
+        margin-left: 10%;
+        font-size: 0.6rem;
+      }
+    }
+    p.date {
+      @include mQ(500px) {
+        font-size: 0.9rem;
+      }
+      margin-top: 20px;
+      font-family: $fontFam2;
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    p {
+      @include mQ(500px) {
+        font-size: 0.5rem;
+      }
+    }
+  }
+}
+
+#main-program{
+  background-image: url(https://cdn.cp.adobe.io/content/2/dcx/9201c10f-8b09-4fa4-a15b-cb0b102da3cb/rendition/preview.jpg/version/1/format/jpg/dimension/width/size/1200);
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  height: 60vh;
+  width: 100%;
+  margin-top: -30px;
+  h2{
+    font-family: $fontFam2;
+    margin-top: 55px;
+    color: white;
+    text-align: center;
+  }
+  .line{
+    border-top: 2px solid $orange;
+    width: 5%;
+    margin-left: 47.5%;
+  }
+  
+}
+
+#featured-speakers{
+  background: pink;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  height: 60vh;
+  width: 100%;
 }
