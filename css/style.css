@@ -155,7 +155,7 @@ a {
   margin-left: 72%;
   margin-right: 6%;
 }
-#top-nav ul:after {
+#top-nav ul::after {
   content: "";
   display: block;
   clear: both;
@@ -178,7 +178,7 @@ a {
   height: 50px;
   display: none;
   margin-top: 0;
-  padding-left: 14%;
+  padding-left: 15%;
 }
 @media screen and (max-width: 3000px) and (min-width: 769px) {
   #bot-nav {
@@ -269,7 +269,7 @@ a {
   position: absolute;
 }
 .main-bg #main-content {
-  padding-left: 14%;
+  padding-left: 15%;
   z-index: 7;
 }
 .main-bg #main-content h4 {
@@ -362,9 +362,15 @@ a {
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: contain;
-  height: 60vh;
+  height: 80vh;
   width: 100%;
   margin-top: -30px;
+}
+@media screen and (max-width: 768px) {
+  #main-program {
+    height: 85vh;
+    display: hidden;
+  }
 }
 #main-program h2 {
   font-family: "cocogoosedemibold";
@@ -376,6 +382,89 @@ a {
   border-top: 2px solid #ec5242;
   width: 5%;
   margin-left: 47.5%;
+}
+@media screen and (max-width: 768px) {
+  #main-program ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+#main-program li {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+}
+@media screen and (max-width: 3000px) and (min-width: 769px) {
+  #main-program li {
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    width: 13.2%;
+    margin-top: 60px;
+    padding-bottom: 10px;
+    height: 160px;
+  }
+  #main-program li:first-child {
+    margin-left: 15%;
+  }
+  #main-program li:nth-child(5n) {
+    margin-right: 15%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #main-program li {
+    margin-left: 5%;
+    margin-top: 10px;
+    width: 90%;
+    padding: 2px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  #main-program li {
+    font-size: 0.6rem;
+  }
+}
+#main-program p {
+  margin-left: 7%;
+}
+@media screen and (max-width: 3000px) and (min-width: 769px) {
+  #main-program p {
+    margin-right: 7%;
+  }
+}
+#main-program i {
+  margin-top: 8px;
+}
+@media screen and (max-width: 3000px) and (min-width: 769px) {
+  #main-program i {
+    font-size: 2rem;
+  }
+}
+#main-program p,
+#main-program i {
+  text-align: center;
+  color: white;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  #main-program p,
+#main-program i {
+    float: left;
+  }
+}
+#main-program .header-grid {
+  color: #ec5242;
+  padding-top: 8px;
+}
+@media screen and (max-width: 768px) {
+  #main-program .flex-font {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 3000px) and (min-width: 769px) {
+  #main-program .flex-font {
+    font-size: 0.7rem;
+  }
 }
 
 #featured-speakers {

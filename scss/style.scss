@@ -85,16 +85,21 @@
 
 .main-bg {
   @include mQ(668px) {
-    height: 90vh
+    height: 90vh;
   }
-    z-index: 1;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, .7), rgb(255, 255, 255, .7)), url(https://cdn.cp.adobe.io/content/2/dcx/a708b1d2-528f-45b0-ad10-31259dd4db79/rendition/preview.jpg/version/1/format/jpg/dimension/width/size/1200);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    height: 130vh;
-    margin-bottom: 0;
+  z-index: 1;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.7),
+      rgb(255, 255, 255, 0.7)
+    ),
+    url(https://cdn.cp.adobe.io/content/2/dcx/a708b1d2-528f-45b0-ad10-31259dd4db79/rendition/preview.jpg/version/1/format/jpg/dimension/width/size/1200);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 130vh;
+  margin-bottom: 0;
   // background section
   .bg-section {
     @include mQ(768px) {
@@ -198,30 +203,97 @@
   }
 }
 
-#main-program{
+#main-program {
+  @include mQ(768px) {
+    height: 85vh;
+    display: hidden;
+  }
   background-image: url(https://cdn.cp.adobe.io/content/2/dcx/9201c10f-8b09-4fa4-a15b-cb0b102da3cb/rendition/preview.jpg/version/1/format/jpg/dimension/width/size/1200);
   background-position: center;
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: contain;
-  height: 60vh;
+  height: 80vh;
   width: 100%;
   margin-top: -30px;
-  h2{
+  
+  h2 {
     font-family: $fontFam2;
     margin-top: 55px;
     color: white;
     text-align: center;
   }
-  .line{
+  .line {
     border-top: 2px solid $orange;
     width: 5%;
     margin-left: 47.5%;
   }
-  
+  ul {
+    @include mQ(768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  li {
+    @include mQ(3000px, 769px) {
+      @include grid(5, 1%);
+      margin-top: 60px;
+      padding-bottom: 10px;
+      height:  160px;
+    }
+    @include mQ(768px) {
+      margin-left: 5%;
+      margin-top: 10px;
+      width: 90%;
+      padding: 2px;
+      font-size: 1rem;
+    }
+    @include mQ(520px) {
+      font-size: 0.6rem;
+    }
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.7),
+      rgb(255, 255, 255, 0.7)
+    );
+  }
+  p {
+    @include mQ(3000px, 769px){
+      margin-right: 7%;
+    }
+      margin-left: 7%;
+  }
+  i {
+    @include mQ(3000px, 769px){
+      font-size: 2rem;
+    }
+      margin-top: 8px;
+  }
+  p,
+  i {
+    @include mQ(768px){
+      float:left;
+    }
+      text-align: center;
+      color: white;
+      margin-bottom: 0;
+  }
+  .header-grid {
+      color: $orange;
+      padding-top: 8px;
+  }
+  .flex-font {
+    @include mQ(768px) {
+      width: 50%;
+    }
+    @include mQ(3000px, 769px) {
+      font-size: 0.7rem;
+    }
+  }
 }
 
-#featured-speakers{
+#featured-speakers {
   background: pink;
   background-position: center;
   background-repeat: repeat;
