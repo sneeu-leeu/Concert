@@ -165,8 +165,13 @@ a {
   margin-right: 4%;
   text-align: center;
 }
+@media screen and (max-width: 921px) and (min-width: 769px) {
+  #top-nav li {
+    margin-right: 2%;
+  }
+}
 #top-nav a {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: white;
   opacity: 0.7;
 }
@@ -199,6 +204,11 @@ a {
   font-size: 0.8rem;
   margin-right: 7%;
   margin-top: 8px;
+}
+@media screen and (max-width: 921px) and (min-width: 769px) {
+  #bot-nav li {
+    margin-right: 5%;
+  }
 }
 #bot-nav li:first-child {
   color: #ec5242;
@@ -233,12 +243,12 @@ a {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  height: 130vh;
+  height: 140vh;
   margin-bottom: 0;
 }
 @media screen and (max-width: 668px) {
   .main-bg {
-    height: 90vh;
+    height: 70vh;
   }
 }
 .main-bg .bg-section {
@@ -336,7 +346,7 @@ a {
 .main-bg #main-content .box-on-screen p {
   margin: 0 0 5px 0;
   margin-left: 10%;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 }
 .main-bg #main-content p.date {
   margin-top: 20px;
@@ -362,21 +372,29 @@ a {
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: contain;
-  height: 100vh;
+  height: 85vh;
   width: 100%;
-  margin-top: -30px;
 }
 @media screen and (max-width: 768px) {
   #main-program {
-    height: 85vh;
+    height: 110vh;
     display: hidden;
   }
 }
-#main-program h2 {
+@media screen and (max-width: 520px) {
+  #main-program {
+    height: 80vh;
+  }
+}
+#main-program h2,
+#main-program h4 {
+  padding-top: 30px;
   font-family: "cocogoosedemibold";
-  margin-top: 55px;
   color: white;
   text-align: center;
+}
+#main-program h4 {
+  font-size: 1rem;
 }
 #main-program .line {
   border-top: 2px solid #ec5242;
@@ -472,17 +490,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   #featured-speakers {
-    height: 190vh;
-  }
-}
-@media screen and (max-width: 450px) {
-  #featured-speakers {
-    height: 250vh;
-  }
-}
-@media screen and (max-width: 450px) {
-  #featured-speakers {
-    height: 270vh;
+    height: 180vh;
   }
 }
 #featured-speakers h2 {
@@ -544,7 +552,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   #featured-speakers li {
-    margin-top: 20px;
+    margin-top: 40px;
   }
   #featured-speakers li h4,
 #featured-speakers li p {
@@ -562,6 +570,7 @@ a {
   }
   #featured-speakers li .grid-shadow-img img {
     width: 25px;
+    height: 25px;
   }
 }
 #featured-speakers li .flex-list {
@@ -575,8 +584,6 @@ a {
   top: -30px;
   left: -30px;
   z-index: -1;
-}
-#featured-speakers li .grid-shadow-img img {
   width: 50px;
 }
 
@@ -590,6 +597,11 @@ footer h2 {
   margin-top: 55px;
   color: #7e7e7e;
   text-align: center;
+}
+@media screen and (max-width: 818px) and (min-width: 768px) {
+  footer h2 {
+    width: 100%;
+  }
 }
 footer .line {
   border-top: 2px solid #ec5242;
@@ -605,25 +617,121 @@ footer li {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 68%;
+  width: 67.6%;
   margin-right: 3%;
-  font-size: 1.4rem;
+  font-size: 2rem;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 768px) {
-  footer li h3 {
-    font-size: 0.8rem;
+  footer li {
+    font-size: 2rem;
   }
 }
-footer h3 {
-  margin-left: 5%;
-  margin-top: 10px;
+
+.main-bg-about {
+  z-index: 1;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(https://cdn.cp.adobe.io/content/2/dcx/a708b1d2-528f-45b0-ad10-31259dd4db79/rendition/preview.jpg/version/1/format/jpg/dimension/width/size/1200);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 140vh;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 540px) {
+  .main-bg-about {
+    height: 100vh;
+  }
 }
 
 .text-bg-about {
-  float: right;
-  margin-right: 20%;
+  padding-top: 30px;
+  letter-spacing: 7px;
+  text-align: center;
+}
+.text-bg-about h2 {
   color: #ec5242;
-  font-family: "cocogoosedemibold";
+  font-family: "Lato", sans-serif;
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 3rem;
+}
+@media screen and (max-width: 540px) {
+  .text-bg-about h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.line-bg {
+  border-top: 2px solid #ec5242;
+  z-index: 2;
+  width: 5%;
+  margin-left: 47.5%;
+}
+
+.box-on-screen-about {
+  font-family: "Lato", sans-serif;
+  z-index: 2;
+  background-color: white;
+  width: 60%;
+  margin-left: 20%;
+  border: 2px solid #b3b3b3;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .box-on-screen-about {
+    max-height: 50vh;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 768px) {
+  .box-on-screen-about {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+.box-on-screen-about p {
+  margin: 0 10% 1px 10%;
+  font-size: 0.8rem;
+}
+.box-on-screen-about .hidden-text-rm {
+  margin-top: 10px;
+}
+@media screen and (max-width: 3000px) and (min-width: 540px) {
+  .box-on-screen-about .hidden-text-rm {
+    display: none;
+  }
+}
+@media screen and (max-width: 540px) {
+  .box-on-screen-about .hidden-text {
+    display: none;
+  }
+}
+
+.under-box {
+  text-align: center;
+  margin-top: 30px;
+}
+.under-box p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+.under-box a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#logo h2 {
+  padding-top: 30px;
+  font-family: "cocogoosedemibold";
+  text-align: center;
+  font-size: 1.6rem;
+}
+#logo .line {
+  border-top: 2px solid #ec5242;
+  z-index: 2;
+  width: 5%;
+  margin-left: 47.5%;
 }
