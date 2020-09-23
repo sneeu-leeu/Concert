@@ -629,6 +629,7 @@ footer li {
 }
 
 .main-bg-about {
+  border-bottom: 2px solid #f3f3f3;
   z-index: 1;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(https://cdn.cp.adobe.io/content/2/dcx/a708b1d2-528f-45b0-ad10-31259dd4db79/rendition/preview.jpg/version/1/format/jpg/dimension/width/size/1200);
   background-position: top;
@@ -723,6 +724,9 @@ footer li {
   text-decoration: underline;
 }
 
+#logo {
+  border-bottom: 2px solid #f3f3f3;
+}
 #logo h2 {
   padding-top: 30px;
   font-family: "cocogoosedemibold";
@@ -734,4 +738,22 @@ footer li {
   z-index: 2;
   width: 5%;
   margin-left: 47.5%;
+}
+#logo .logo-text {
+  margin-top: 40px;
+  font-size: 0.8rem;
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+}
+#logo .logo-img-card {
+  margin-top: 30px;
+  margin-bottom: 35px;
+  width: 30%;
+  margin-left: 35%;
+  border: 2px solid #f3f3f3;
+}
+#logo .logo-img-card img {
+  width: 90%;
+  margin: 2.5% 5%;
 }
