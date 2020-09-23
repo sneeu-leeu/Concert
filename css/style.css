@@ -248,7 +248,12 @@ a {
 }
 @media screen and (max-width: 668px) {
   .main-bg {
-    height: 70vh;
+    height: 90vh;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 669px) {
+  .main-bg {
+    height: 100vh;
   }
 }
 .main-bg .bg-section {
@@ -279,8 +284,13 @@ a {
   position: absolute;
 }
 .main-bg #main-content {
-  padding-left: 15%;
+  padding-left: 5%;
   z-index: 7;
+}
+@media screen and (max-width: 3000px) and (min-width: 768px) {
+  .main-bg #main-content {
+    padding-left: 15%;
+  }
 }
 .main-bg #main-content h4 {
   z-index: 7;
@@ -325,7 +335,7 @@ a {
 .main-bg #main-content .box-on-screen {
   font-family: "Lato", sans-serif;
   z-index: 2;
-  background-color: #b3b3b3;
+  background-color: #dfd9d9a9;
   width: 55%;
   border: 2px solid white;
   margin-top: 20px;
@@ -334,13 +344,13 @@ a {
 }
 @media screen and (max-width: 500px) {
   .main-bg #main-content .box-on-screen {
-    width: 80%;
+    width: 90%;
     font-size: 0.5rem;
   }
 }
 @media screen and (max-width: 768px) {
   .main-bg #main-content .box-on-screen {
-    width: 80%;
+    width: 90%;
   }
 }
 .main-bg #main-content .box-on-screen p {
@@ -472,7 +482,13 @@ a {
 }
 #main-program .header-grid {
   color: #ec5242;
+  font-weight: bold;
   padding-top: 8px;
+}
+@media screen and (max-width: 768px) {
+  #main-program .header-grid {
+    width: 21%;
+  }
 }
 @media screen and (max-width: 768px) {
   #main-program .flex-font {
@@ -486,7 +502,7 @@ a {
 }
 
 #featured-speakers {
-  height: 140vh;
+  height: 145vh;
 }
 @media screen and (max-width: 768px) {
   #featured-speakers {
@@ -588,14 +604,13 @@ a {
 }
 
 footer {
-  background-color: #d3d3d3;
+  background-color: #272a31;
   margin-top: 10px;
   margin-right: 0;
 }
 footer h2 {
   font-family: "cocogoosedemibold";
-  margin-top: 55px;
-  color: #7e7e7e;
+  color: #bbb7b7;
   text-align: center;
 }
 @media screen and (max-width: 818px) and (min-width: 768px) {
@@ -614,6 +629,7 @@ footer ul {
   margin-top: 40px;
 }
 footer li {
+  color: #5f5f5f;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -756,4 +772,81 @@ footer li {
 #logo .logo-img-card img {
   width: 90%;
   margin: 2.5% 5%;
+}
+
+#previous-medusa {
+  height: 90vh;
+}
+@media screen and (max-width: 767px) {
+  #previous-medusa {
+    height: 110vh;
+  }
+}
+#previous-medusa h2 {
+  padding-top: 30px;
+  font-family: "cocogoosedemibold";
+  text-align: center;
+  font-size: 1.6rem;
+}
+#previous-medusa .line {
+  border-top: 2px solid #ec5242;
+  z-index: 2;
+  width: 5%;
+  margin-left: 47.5%;
+}
+#previous-medusa .logo-text {
+  margin-top: 40px;
+  font-size: 0.8rem;
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+}
+#previous-medusa ul {
+  padding-top: 45px;
+}
+@media screen and (max-width: 767px) {
+  #previous-medusa ul {
+    padding-top: 20px;
+  }
+}
+#previous-medusa li {
+  padding-top: 50px;
+  color: white;
+  text-align: center;
+}
+@media screen and (max-width: 3000px) and (min-width: 768px) {
+  #previous-medusa li {
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 32.5%;
+    height: 180px;
+  }
+  #previous-medusa li:first-child {
+    margin-left: 15%;
+  }
+  #previous-medusa li:nth-child(2n) {
+    margin-right: 15%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #previous-medusa li {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+  }
+}
+#previous-medusa li p {
+  font-family: "Lato", sans-serif;
+  margin: 3px 5px 10px 5px;
+}
+#previous-medusa .bg1 {
+  background: linear-gradient(to bottom, rgba(247, 48, 48, 0.596), rgba(247, 48, 48, 0.596)), url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/17f0939e-6a31-4b53-b936-6683b13424f0/d4y5w1h-61fc707c-a05e-430d-93b3-cf3f7f6feb84.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMTdmMDkzOWUtNmEzMS00YjUzLWI5MzYtNjY4M2IxMzQyNGYwXC9kNHk1dzFoLTYxZmM3MDdjLWEwNWUtNDMwZC05M2IzLWNmM2Y3ZjZmZWI4NC5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.6jqahdpazu-x5S99Qslw5TCz4cfscx8WnHQSReKYqgw);
+  background-position: center;
+  background-size: cover;
+}
+#previous-medusa .bg2 {
+  background: linear-gradient(to bottom, rgba(247, 48, 48, 0.596), rgba(247, 48, 48, 0.596)), url(https://image.shutterstock.com/image-illustration/hand-drawn-medusa-skull-black-600w-1495755284.jpg);
+  background-position: center;
+  background-size: cover;
 }

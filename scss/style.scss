@@ -91,7 +91,10 @@
 
 .main-bg {
   @include mQ(668px) {
-    height: 70vh;
+    height: 90vh;
+  }
+  @include mQ(768px, 669px) {
+    height: 100vh;
   }
   z-index: 1;
   background: linear-gradient(
@@ -133,7 +136,10 @@
     }
   }
   #main-content {
-    padding-left: $pagePadL;
+    @include mQ(3000px, 768px){
+      padding-left: $pagePadL;
+    }
+    padding-left: 5%;
     z-index: 7;
     h4 {
       @include mQ(785px) {
@@ -171,15 +177,15 @@
     }
     .box-on-screen {
       @include mQ(500px) {
-        width: 80%;
+        width: 90%;
         font-size: 0.5rem;
       }
       @include mQ(768px) {
-        width: 80%;
+        width: 90%;
       }
       font-family: $fontFam1;
       z-index: 2;
-      background-color: #b3b3b3;
+      background-color: #dfd9d9a9;
       width: 55%;
       border: 2px solid white;
       margin-top: 20px;
@@ -291,7 +297,11 @@
     margin-bottom: 0;
   }
   .header-grid {
+    @include mQ(768px){
+      width: 21%;
+    }
     color: $orange;
+    font-weight: bold;
     padding-top: 8px;
   }
   .flex-font {
@@ -308,7 +318,7 @@
   @include mQ(768px) {
     height: 180vh;
   }
-  height: 140vh;
+  height: 145vh;
   h2 {
     font-family: $fontFam2;
     margin-top: 55px;
@@ -394,7 +404,7 @@
 }
 
 footer {
-  background-color: #d3d3d3;
+  background-color: #272a31;
   margin-top: 10px;
   margin-right: 0;
 
@@ -403,8 +413,7 @@ footer {
       width: 100%;
     }
     font-family: $fontFam2;
-    margin-top: 55px;
-    color: rgb(126, 126, 126);
+    color: rgb(187, 183, 183);
     text-align: center;
   }
   .line {
@@ -418,6 +427,7 @@ footer {
     margin-top: 40px;
   }
   li {
+    color: rgb(95, 95, 95);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -553,5 +563,75 @@ footer {
       width: 90%;
       margin: 2.5% 5%;
     }
+  }
+}
+
+#previous-medusa{
+  @include mQ(767px){
+      height: 110vh;
+  }
+  height: 90vh;
+  h2 {
+    padding-top: 30px;
+    font-family: $fontFam2;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .line {
+    border-top: 2px solid $orange;
+    z-index: 2;
+    width: 5%;
+    margin-left: 47.5%;
+  }
+  .logo-text{
+    margin-top: 40px;
+    font-size: .8rem;
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+  }
+  ul{ 
+    @include mQ(767px){
+      padding-top: 20px;
+    }
+    padding-top: 45px;
+  }
+  li{
+    @include mQ(3000px, 768px){
+      @include grid(2, 5%);
+      height: 180px;
+    }
+    @include mQ(767px){
+      width: 80%;
+      margin-left: 10%;
+      margin-bottom: 20px;
+    }
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+    p{
+      font-family: $fontFam1;
+      margin: 3px 5px 10px 5px;
+    }
+  }
+  .bg1{
+    background: linear-gradient(
+      to bottom,
+      rgba(247, 48, 48, 0.596),
+      rgba(247, 48, 48, 0.596)
+    ),
+    url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/17f0939e-6a31-4b53-b936-6683b13424f0/d4y5w1h-61fc707c-a05e-430d-93b3-cf3f7f6feb84.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMTdmMDkzOWUtNmEzMS00YjUzLWI5MzYtNjY4M2IxMzQyNGYwXC9kNHk1dzFoLTYxZmM3MDdjLWEwNWUtNDMwZC05M2IzLWNmM2Y3ZjZmZWI4NC5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.6jqahdpazu-x5S99Qslw5TCz4cfscx8WnHQSReKYqgw);
+    background-position: center;
+    background-size: cover;
+  }
+  .bg2{
+    background: linear-gradient(
+      to bottom,
+      rgba(247, 48, 48, 0.596),
+      rgba(247, 48, 48, 0.596)
+    ),
+    url(https://image.shutterstock.com/image-illustration/hand-drawn-medusa-skull-black-600w-1495755284.jpg);
+    background-position: center;
+    background-size: cover;
   }
 }
