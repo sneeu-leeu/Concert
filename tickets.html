@@ -45,42 +45,116 @@
 
   <main>
     <section id="step-1">
-      <h2>Tickets</h2>
+      <h2>Select Tickets</h2>
+      <div class="line">
+        <!-- just for border -->
+      </div>
+      <div class=round-border>
+        <p><span><i class="fas fa-gem"></i> Step1</span> Please select the session in which you want to rock</p>
+      </div>
+      <table>
+        <tr>
+          <thead>
+            <th>Ticket</th>
+            <th>One-Day-Ticket</th>
+            <th colspan="2">Two-Day-Ticket</th>
+            <th>Persius & Athena</th>
+          </thead>
+        </tr>
+        <tr>
+          <th>Date</th>
+          <th>20 April(Fri)</th>
+          <th>21 April(Sat)</th>
+          <th>20-21 April(Fri-Sat)</th>
+          <th>20-21 April(Fri-Sat)</th>
+        </tr>
+        <tr>
+          <th>Adults</th>
+          <th class="orange">ZAR 800 <br> <input type="radio" id="one-day-tick-1" name="price-adult" value="Zar800">
+          </th>
+          <th class="orange">ZAR 800 <br> <input type="radio" id="one-day-tick-2" name="price-adult" value="Zar800">
+          </th>
+          <th class="orange">ZAR 1200 <br> <input type="radio" id="2-day-tick-1" name="price-adult" value="Zar800"></th>
+          <th class="orange">ZAR 800 <br> <input type="radio" id="2-day-tick-2" name="price-adult" value="Zar800"></th>
+        </tr>
+        <tr>
+          <th>Students</th>
+          <th class="orange">ZAR 600 <br> <input type="radio" id="one-day-tick-1" name="price-stud" value="Zar800"></th>
+          <th class="orange">ZAR 600 <br> <input type="radio" id="one-day-tick-2" name="price-stud" value="Zar800"></th>
+          <th class="orange">ZAR 1000 <br> <input type="radio" id="2-day-tick-1" name="price-stud" value="Zar800"></th>
+          <th class="orange">ZAR 600 <br> <input type="radio" id="2-day-tick-2" name="price-stud" value="Zar800"></th>
+        </tr>
+      </table>
+    </section>
+    <div class="half-page-icon">
+      <i class="fas fa-headphones-alt"></i>
+    </div>
+    <section id="step-2">
+
+      <h2>Payment Method</h2>
+      <div class="line">
+        <!-- just for border -->
+      </div>
+      <div class=round-border>
+        <p><span><i class="fas fa-gem"></i> Step1</span> Please select the method you want to buy your ticket with</p>
+      </div>
+      <table>
+        <tr>
+          <thead>
+            <th colspan=4>Secure online payment</th>
+          </thead>
+        </tr>
+        <tr>
+          <th class="orange"><i class="fab fa-cc-mastercard"></i><br> <input type="radio" id="one-day-tick-1"
+              name="price-adult" value="Zar800">
+          </th>
+          <th class="orange"><i class="fab fa-cc-visa"></i><br> <input type="radio" id="one-day-tick-2"
+              name="price-adult" value="Zar800">
+          </th>
+          <th class="orange"><i class="fab fa-paypal"></i><br> <input type="radio" id="2-day-tick-1" name="price-adult"
+              value="Zar800"></th>
+          <th class="orange"><i class="fab fa-bitcoin"></i> <br> <input type="radio" id="2-day-tick-2"
+              name="price-adult" value="Zar800"></th>
+        </tr>
+      </table>
+      <table class=table-2>
+        <tr>
+          <thead>
+            <th colspan=4>Cash payments can be made at:</th>
+          </thead>
+        </tr>
+        <tr>
+          <th>Makro</th>
+          <th>Spar</th>
+          <th>Gypsy</th>
+          <th>Ska Clothing</th>
+      </table>
+
+      <div class="butn-group d-flex w-50 justify-content-around">
+        <button type="button" class="btn btn-outline-secondary w-25">Buy Now</button>
+        <button type="button" class="btn btn-outline-secondary w-25">Book Tickets</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <h2>Partners</h2>
     <div class="line">
       <!-- just for border -->
     </div>
-    <div class=round-border>
-      <p><span><i class="fas fa-gem"></i> Step1</span> Please select the session in which you want to rock Medusa</p>
+    <div>
+      <ul>
+        <li><i class="fab fa-symfony"></i>
+        </li>
+        <li><i class="fab fa-google"></i>
+        </li>
+        <li><i class="fas fa-piggy-bank"></i>
+        </li>
+        <li><i class="fab fa-angellist"></i>
+        </li>
+        <li><i class="fab fa-bitcoin"></i></i>
+        </li>
+      </ul>
     </div>
-    <table>
-      <tr>
-        <th>Ticket</th>
-        <th>One-Day-Ticket</th>
-        <th colspan="2">Two-Day-Ticket</th>
-        <th>Persius & Athena</th>
-      </tr>
-      <tr>
-        <th>Date</th>
-        <th>20 April(Fri)</th>
-        <th>21 April(Sat)</th>
-        <th>20-21 April(Fri-Sat)</th>
-        <th>20-21 April(Fri-Sat)</th>
-      </tr>
-      <tr>
-        <th>Adults</th>
-        <th>ZAR 800</th>
-        <th>ZAR 800</th>
-        <th>ZAR 1200</th>
-        <th>ZAR 800</th>
-      </tr>
-      <tr>
-        <th>Students</th>
-        <th>ZAR 600</th>
-        <th>ZAR 600</th>
-        <th>ZAR 1000</th>
-        <th>ZAR 600</th>
-      </tr>
-    </table>
-    </section>
-  </main>
-  </body>
+  </footer>
+</body>
+</html>
