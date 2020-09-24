@@ -635,3 +635,49 @@ footer {
     background-size: cover;
   }
 }
+
+// Tickets Page
+
+#step-1{
+  h2 {
+    padding-top: 30px;
+    font-family: $fontFam2;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  p {
+    margin: 0;
+    font-size: 0.7rem;
+  }
+  span {
+    color: $orange;
+    margin-right: 20px;
+    font-size: 0.8rem;
+  }
+  .line {
+    border-top: 2px solid $orange;
+    z-index: 2;
+    width: 5%;
+    margin-left: 47.5%;
+  }
+  .round-border{
+    padding: 3px 10px;
+    margin-top: 40px;
+    margin-left: 33.5%;
+    width: 33%;
+    border: 1px solid lightgrey;
+    border-radius: 100px;
+  }
+  table,
+  tr,
+  th {
+    border: 1px solid lightgrey;
+    padding: 5px 20px;
+    text-align: center;
+    font-size: .7rem;
+  }
+  table{
+  margin: 30px auto;
+  }
+  
+}
