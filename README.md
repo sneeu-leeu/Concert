@@ -31,7 +31,7 @@ This project consists of a HTML & CSS Capstone Project, based on an online websi
 
 ## Presentation Video
 
-[Loom](https://www.loom.com/share/88b905d58e184f7aae32b94fed80001f)
+[Loom](https://www.loom.com/share/ec57b95b8d9d438da3a10e44dc342344)
 
 ## Live Demo
 
