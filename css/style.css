@@ -499,17 +499,9 @@ footer li {
     left: -15px;
     z-index: -1;
   }
-  #featured-speakers li .grid-shadow-img img {
-    width: 25px;
-    height: 25px;
-  }
 }
 #featured-speakers li .flex-list {
   display: flex;
-}
-#featured-speakers li img {
-  width: 100px;
-  height: 100px;
 }
 #featured-speakers li .grid-shadow-img {
   top: -30px;
@@ -607,6 +599,11 @@ footer li {
 }
 #step-1 thead {
   background-color: #eee;
+}
+
+.grid-list-img {
+  width: 100px;
+  height: 100px;
 }
 
 .half-page-icon {

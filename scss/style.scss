@@ -367,21 +367,11 @@ footer {
         top: -15px;
         left: -15px;
         z-index: -1;
-
-        img {
-          width: 25px;
-          height: 25px;
-        }
       }
     }
 
     .flex-list {
       display: flex;
-    }
-
-    img {
-      width: 100px;
-      height: 100px;
     }
 
     .grid-shadow-img {
@@ -484,6 +474,11 @@ footer {
   thead {
     background-color: #eee;
   }
+}
+
+.grid-list-img {
+  width: 100px;
+  height: 100px;
 }
 
 .half-page-icon {

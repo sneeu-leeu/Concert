@@ -40,8 +40,8 @@ This project consists of a HTML & CSS Capstone Project, based on an online websi
 ## 👤 Author
 
 - Github: [@sneeu-leeu](https://github.com/sneeu-leeu)
-- Twitter: [@e_ananti](https://twitter.com/e_ananti)
-- Linkedin: [Emeka Ananti](https://www.linkedin.com/in/emekaananti/)
+- Twitter: [@Stephan07484055](https://twitter.com/Stephan07484055)
+- Linkedin: [Stephan Annandale](https://www.linkedin.com/in/stephan-annandale-a4b4931a9/)
 
 ## Acknowledgments
 
