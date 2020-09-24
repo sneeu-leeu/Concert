@@ -2,61 +2,741 @@
 @import "variables";
 @import "mixins";
 
+footer {
+  background-color: #272a31;
+  margin-top: 10px;
+  margin-right: 0;
+
+  h2 {
+    @include mQ(818px, 768px) {
+      width: 100%;
+    }
+
+    font-family: $fontFam2;
+    color: rgb(187, 183, 183);
+    text-align: center;
+  }
+
+  .line {
+    border-top: 2px solid $orange;
+    width: 5%;
+    margin-left: 47.5%;
+  }
+
+  ul {
+    display: flex;
+    margin: 0 10%;
+    margin-top: 40px;
+  }
+
+  li {
+    color: rgb(95, 95, 95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 11.6%;
+    margin-right: 3%;
+    font-size: 2rem;
+    margin-bottom: 40px;
+
+    @include mQ(768px) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.under-box {
+  text-align: center;
+  margin-top: 30px;
+
+  p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  a {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
 #top-nav {
   @include mQ(2000px, 769px) {
     display: block;
   }
+
   display: none;
   background: rgb(0, 0, 0);
-  background: linear-gradient(
-    49deg,
-    rgba(15.3, 16.5, 19.2, 0.8152424942263279) 54%,
-    rgba(15.3, 16.5, 19.2, 0.8152424942263279) 54%
-  );
+  background:
+    linear-gradient(
+      49deg,
+      rgba(15.3, 16.5, 19.2, 0.8152424942263279) 54%,
+      rgba(15.3, 16.5, 19.2, 0.8152424942263279) 54%
+    );
+
   ul {
     margin-left: 72%;
     margin-right: 6%;
+
     @include clearFix;
   }
+
   li {
     @include mQ(921px, 769px) {
       margin-right: 2%;
     }
+
     float: left;
     margin-right: 4%;
     text-align: center;
   }
+
   a {
     font-size: 0.8rem;
     color: white;
     opacity: 0.7;
   }
+
   &:hover {
     text-decoration: none;
   }
+
   margin-bottom: 0;
 }
 
-#bot-nav {
-  @include mQ(3000px, 769px) {
+.text-bg-about {
+  padding-top: 30px;
+  letter-spacing: 7px;
+  text-align: center;
+
+  h2 {
+    @include mQ(540px) {
+      font-size: 1.5rem;
+    }
+
+    color: $orange;
+    font-family: $fontFam1;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+}
+
+.box-on-screen-about {
+  @include mQ(500px) {
+    max-height: 50vh;
+    overflow: hidden;
+  }
+
+  @include mQ(768px) {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  font-family: $fontFam1;
+  z-index: 2;
+  background-color: white;
+  width: 60%;
+  margin-left: 20%;
+  border: 2px solid #b3b3b3;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+
+  p {
+    margin: 0 10% 1px 10%;
+    font-size: 0.8rem;
+  }
+
+  .hidden-text-rm {
+    margin-top: 10px;
+
+    @include mQ(3000px, 540px) {
+      display: none;
+    }
+  }
+
+  .hidden-text {
+    @include mQ(540px) {
+      display: none;
+    }
+  }
+}
+
+#main-program {
+  @include mQ(768px) {
+    height: 110vh;
+  }
+
+  @include mQ(520px) {
+    height: 80vh;
+  }
+
+  background-image: url(https://cdn.cp.adobe.io/content/2/dcx/9201c10f-8b09-4fa4-a15b-cb0b102da3cb/rendition/preview.jpg/version/1/format/jpg/dimension/width/size/1200);
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  height: 85vh;
+  width: 100%;
+
+  h2,
+  h4 {
+    padding-top: 30px;
+    font-family: $fontFam2;
+    color: white;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  .line {
+    border-top: 2px solid $orange;
+    width: 5%;
+    margin-left: 47.5%;
+  }
+
+  ul {
+    @include mQ(768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  li {
+    @include mQ(3000px, 769px) {
+      @include grid(5, 1%);
+
+      margin-top: 60px;
+      padding-bottom: 10px;
+      height: 160px;
+    }
+
+    @include mQ(768px) {
+      margin-left: 5%;
+      margin-top: 10px;
+      width: 90%;
+      padding: 2px;
+      font-size: 1rem;
+    }
+
+    @include mQ(520px) {
+      font-size: 0.6rem;
+    }
+
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.7),
+        rgb(255, 255, 255, 0.7)
+      );
+  }
+
+  p {
+    @include mQ(3000px, 769px) {
+      margin-right: 7%;
+    }
+
+    margin-left: 7%;
+  }
+
+  i {
+    @include mQ(3000px, 769px) {
+      font-size: 2rem;
+    }
+
+    margin-top: 8px;
+  }
+
+  p,
+  i {
+    @include mQ(768px) {
+      float: left;
+    }
+
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+  }
+
+  .header-grid {
+    @include mQ(768px) {
+      width: 21%;
+    }
+
+    color: $orange;
+    font-weight: bold;
+    padding-top: 8px;
+  }
+
+  .flex-font {
+    @include mQ(768px) {
+      width: 50%;
+    }
+
+    @include mQ(3000px, 769px) {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+#featured-speakers {
+  @include mQ(768px) {
+    height: 180vh;
+  }
+
+  height: 145vh;
+
+  h2 {
+    font-family: $fontFam2;
+    margin-top: 55px;
+    text-align: center;
+  }
+
+  .line {
+    border-top: 2px solid $orange;
+    width: 5%;
+    margin-left: 47.5%;
+  }
+
+  ul {
+    @include mQ(768px) {
+      display: flex;
+      flex-direction: column;
+      margin-left: 15%;
+    }
+  }
+
+  li {
+    @include mQ(3000px, 769px) {
+      @include grid(2, 5%);
+
+      margin-top: 60px;
+      padding-bottom: 10px;
+
+      &:nth-child(even) {
+        margin-right: 15%;
+      }
+
+      &:nth-child(odd) {
+        margin-left: 15%;
+      }
+
+      h4 {
+        font-weight: bold;
+        font-size: 0.9rem;
+      }
+
+      small {
+        font-size: 0.5rem;
+        color: $orange;
+      }
+
+      hr {
+        width: 10%;
+      }
+
+      p {
+        font-size: 0.7rem;
+      }
+
+      h4,
+      p {
+        margin-left: 10px;
+      }
+    }
+
+    @include mQ(768px) {
+      margin-top: 40px;
+
+      h4,
+      p {
+        margin-left: 20px;
+        font-size: 0.6rem;
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .grid-shadow-img {
+        top: -15px;
+        left: -15px;
+        z-index: -1;
+
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+
+    .flex-list {
+      display: flex;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .grid-shadow-img {
+      top: -30px;
+      left: -30px;
+      z-index: -1;
+      width: 50px;
+    }
+  }
+}
+
+#step-1 {
+  background-color: #eee;
+  height: 90vh;
+
+  h2 {
+    padding-top: 30px;
+    font-family: $fontFam2;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  p {
+    @include mQ(845px) {
+      font-size: 0.6rem;
+    }
+
+    margin: 0;
+    font-size: 0.7rem;
+  }
+
+  span {
+    @include mQ(845px) {
+      font-size: 0.7rem;
+    }
+
+    color: $orange;
+    margin-right: 20px;
+    font-size: 0.8rem;
+  }
+
+  .line {
+    border-top: 2px solid $orange;
+    z-index: 2;
+    width: 3%;
+    margin-left: 48.5%;
+  }
+
+  .round-border {
+    @include mQ(1077px) {
+      width: 40%;
+      margin-left: 30%;
+    }
+
+    @include mQ(889px) {
+      width: 42%;
+      margin-left: 29%;
+    }
+
+    @include mQ(744px) {
+      width: 45%;
+      margin-left: 27.5%;
+    }
+
+    padding: 5px 12px;
+    margin-top: 40px;
+    margin-left: 33.5%;
+    width: 33%;
+    border: 1px solid lightgrey;
+    border-radius: 100px;
+  }
+
+  th {
+    @include mQ(889px) {
+      padding: 7px 14px;
+      font-size: 0.6rem;
+    }
+
+    @include mQ(490px) {
+      padding: 5px 10px;
+      font-size: 0.5rem;
+    }
+
+    border: 1px solid lightgrey;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+
+  .orange {
+    color: $orange;
+  }
+
+  table {
+    border: 3px solid $orange;
+    margin: 30px auto;
+    background-color: white;
+  }
+
+  thead {
+    background-color: #eee;
+  }
+}
+
+.half-page-icon {
+  margin-left: 49%;
+  margin-top: -25px;
+  font-size: 2rem;
+  color: $orange;
+  z-index: 3;
+}
+
+#small-nav {
+  position: relative;
+
+  @include mQ(768px) {
     display: block;
   }
-  height: 50px;
+
   display: none;
-  margin-top: 0;
-  padding-left: $pagePadL;
+
+  i {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+  }
+} // header End
+
+#step-2 {
+  background-color: white;
+  height: 100vh;
+
+  h2 {
+    padding-top: 30px;
+    font-family: $fontFam2;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  p {
+    @include mQ(845px) {
+      font-size: 0.6rem;
+    }
+
+    margin: 0;
+    font-size: 0.7rem;
+  }
+
+  span {
+    @include mQ(845px) {
+      font-size: 0.7rem;
+    }
+
+    color: $orange;
+    margin-right: 20px;
+    font-size: 0.8rem;
+  }
+
+  .orange {
+    color: $orange;
+  }
+
+  .line {
+    border-top: 2px solid $orange;
+    z-index: 2;
+    width: 3%;
+    margin-left: 48.5%;
+  }
+
+  .round-border {
+    @include mQ(1160px) {
+      width: 40%;
+      margin-left: 30%;
+    }
+
+    @include mQ(966px) {
+      width: 42%;
+      margin-left: 29%;
+    }
+
+    @include mQ(768px) {
+      width: 45%;
+      margin-left: 27.5%;
+    }
+
+    padding: 5px 12px;
+    margin-top: 40px;
+    margin-left: 33.5%;
+    width: 33%;
+    border: 1px solid lightgrey;
+    border-radius: 100px;
+  }
+
+  th {
+    @include mQ(889px) {
+      padding: 7px 44px;
+      font-size: 0.6rem;
+    }
+
+    @include mQ(490px) {
+      padding: 5px 20px;
+      font-size: 0.6rem;
+    }
+
+    border: 1px solid lightgrey;
+    padding: 10px 60px;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+
+  table {
+    border: 3px solid #272a31;
+    margin: 30px auto;
+    background-color: white;
+
+    i {
+      font-size: 1.5rem;
+    }
+
+    input {
+      margin: 5px;
+    }
+  }
+
+  thead {
+    background-color: #eee;
+  }
+
+  .butn-group {
+    margin: 60px 25%;
+
+    button {
+      @include mQ(768px) {
+        font-size: 0.6rem;
+      }
+
+      @include mQ(768px) {
+        font-size: 0.5rem;
+        padding: 3px;
+      }
+    }
+  }
+}
+
+#previous-medusa {
+  @include mQ(767px) {
+    height: 110vh;
+  }
+
+  height: 90vh;
+
+  h2 {
+    padding-top: 30px;
+    font-family: $fontFam2;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  .line {
+    border-top: 2px solid $orange;
+    z-index: 2;
+    width: 5%;
+    margin-left: 47.5%;
+  }
+
+  .logo-text {
+    margin-top: 40px;
+    font-size: 0.8rem;
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+  }
+
+  ul {
+    @include mQ(767px) {
+      padding-top: 20px;
+    }
+
+    padding-top: 45px;
+  }
+
+  li {
+    @include mQ(3000px, 768px) {
+      @include grid(2, 5%);
+
+      height: 180px;
+    }
+
+    @include mQ(767px) {
+      width: 80%;
+      margin-left: 10%;
+      margin-bottom: 20px;
+    }
+
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+
+    p {
+      font-family: $fontFam1;
+      margin: 3px 5px 10px 5px;
+    }
+  }
+
+  .bg1 {
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(247, 48, 48, 0.596),
+        rgba(247, 48, 48, 0.596)
+      ),
+      url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/17f0939e-6a31-4b53-b936-6683b13424f0/d4y5w1h-61fc707c-a05e-430d-93b3-cf3f7f6feb84.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMTdmMDkzOWUtNmEzMS00YjUzLWI5MzYtNjY4M2IxMzQyNGYwXC9kNHk1dzFoLTYxZmM3MDdjLWEwNWUtNDMwZC05M2IzLWNmM2Y3ZjZmZWI4NC5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.6jqahdpazu-x5S99Qslw5TCz4cfscx8WnHQSReKYqgw);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bg2 {
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(247, 48, 48, 0.596),
+        rgba(247, 48, 48, 0.596)
+      ),
+      url(https://image.shutterstock.com/image-illustration/hand-drawn-medusa-skull-black-600w-1495755284.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+#bot-nav {
   img {
     float: left;
     width: 100px;
     margin-top: -10px;
   }
+
+  @include mQ(3000px, 769px) {
+    display: block;
+  }
+
+  height: 50px;
+  display: none;
+  margin-top: 0;
+  padding-left: $pagePadL;
+
   ul {
     margin-left: 29%;
   }
+
   li {
     @include mQ(921px, 769px) {
       margin-right: 5%;
     }
+
     float: left;
     align-content: center;
     font-size: 0.8rem;
@@ -66,6 +746,8 @@
     &:first-child {
       color: $orange;
     }
+
+
     &:last-child {
       margin-left: 3%;
       margin-top: 0;
@@ -75,29 +757,69 @@
   }
 }
 
-#small-nav {
-  position: relative;
-  @include mQ(768px) {
-    display: block;
+#logo {
+  border-bottom: 2px solid #f3f3f3;
+
+  h2 {
+    padding-top: 30px;
+
+    h2,
+    h4 {
+      padding-top: 30px;
+      font-family: $fontFam2;
+      color: white;
+      text-align: center;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+
+    text-align: center;
+    font-size: 1.6rem;
   }
-  display: none;
-  i {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 2rem;
+
+  .line {
+    border-top: 2px solid $orange;
+    z-index: 2;
+    width: 5%;
+    margin-left: 47.5%;
   }
-} // header End
+
+  .logo-text {
+    margin-top: 40px;
+    font-size: 0.8rem;
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+  }
+
+  .logo-img-card {
+    margin-top: 30px;
+    margin-bottom: 35px;
+    width: 30%;
+    margin-left: 35%;
+    border: 2px solid #f3f3f3;
+
+    img {
+      width: 90%;
+      margin: 2.5% 5%;
+    }
+  }
+}
 
 .main-bg {
   @include mQ(668px) {
     height: 90vh;
   }
+
   @include mQ(768px, 669px) {
     height: 100vh;
   }
+
   z-index: 1;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.7),
       rgb(255, 255, 255, 0.7)
@@ -114,12 +836,14 @@
     @include mQ(768px) {
       height: 20vh;
     }
+
     z-index: 3;
     height: 30vh;
     width: 70%;
     display: block;
     position: relative;
-    &:after {
+
+    &::after {
       content: "";
       z-index: 2;
       background-image: url(https://i.pinimg.com/originals/e0/fe/a0/e0fea00cb18c59520ae24b30b2b9ee97.jpg);
@@ -135,17 +859,21 @@
       position: absolute;
     }
   }
+
   #main-content {
-    @include mQ(3000px, 768px){
+    @include mQ(3000px, 768px) {
       padding-left: $pagePadL;
     }
+
     padding-left: 5%;
     z-index: 7;
+
     h4 {
       @include mQ(785px) {
         font-size: 1.8rem;
         margin-top: -45px;
       }
+
       z-index: 7;
       position: relative;
       color: $orange;
@@ -153,19 +881,23 @@
       font-size: 2.9rem;
       margin-top: -55px;
     }
+
     .text-bg {
       background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRyhwCqEPispuf2S-NqU_dGt4nXvQ8c2GvT-Q&usqp=CAU);
-      background-clip: text;
+      background-clip: type-of($value: 1);
       -webkit-background-clip: text;
       color: transparent;
+
       h2 {
         @include mQ(668px) {
           font-size: 1.8rem;
           line-height: 2rem;
         }
+
         @include mQ(501, 768px) {
           font-size: 2.2rem;
         }
+
         font-family: $fontFam1;
         font-size: 4.2rem;
         font-weight: bold;
@@ -175,14 +907,23 @@
         letter-spacing: 5px;
       }
     }
+
+    p {
+      @include mQ(500px) {
+        font-size: 0.5rem;
+      }
+    }
+
     .box-on-screen {
       @include mQ(500px) {
         width: 90%;
         font-size: 0.5rem;
       }
+
       @include mQ(768px) {
         width: 90%;
       }
+
       font-family: $fontFam1;
       z-index: 2;
       background-color: #dfd9d9a9;
@@ -191,263 +932,37 @@
       margin-top: 20px;
       padding-top: 20px;
       padding-bottom: 20px;
+
       p {
         margin: 0 0 5px 0;
         margin-left: 10%;
         font-size: 0.8rem;
       }
     }
+
     p.date {
       @include mQ(500px) {
         font-size: 0.9rem;
       }
+
       margin-top: 20px;
       font-family: $fontFam2;
       font-size: 1.8rem;
       font-weight: bold;
       margin-bottom: 0;
     }
-    p {
-      @include mQ(500px) {
-        font-size: 0.5rem;
-      }
-    }
-  }
-}
-
-#main-program {
-  @include mQ(768px) {
-    height: 110vh;
-    display: hidden;
-  }
-  @include mQ(520px) {
-    height: 80vh;
-  }
-  background-image: url(https://cdn.cp.adobe.io/content/2/dcx/9201c10f-8b09-4fa4-a15b-cb0b102da3cb/rendition/preview.jpg/version/1/format/jpg/dimension/width/size/1200);
-  background-position: center;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-size: contain;
-  height: 85vh;
-  width: 100%;
-  h2,
-  h4 {
-    padding-top: 30px;
-    font-family: $fontFam2;
-    color: white;
-    text-align: center;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-  .line {
-    border-top: 2px solid $orange;
-    width: 5%;
-    margin-left: 47.5%;
-  }
-  ul {
-    @include mQ(768px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  }
-  li {
-    @include mQ(3000px, 769px) {
-      @include grid(5, 1%);
-      margin-top: 60px;
-      padding-bottom: 10px;
-      height: 160px;
-    }
-    @include mQ(768px) {
-      margin-left: 5%;
-      margin-top: 10px;
-      width: 90%;
-      padding: 2px;
-      font-size: 1rem;
-    }
-    @include mQ(520px) {
-      font-size: 0.6rem;
-    }
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.7),
-      rgb(255, 255, 255, 0.7)
-    );
-  }
-  p {
-    @include mQ(3000px, 769px) {
-      margin-right: 7%;
-    }
-    margin-left: 7%;
-  }
-  i {
-    @include mQ(3000px, 769px) {
-      font-size: 2rem;
-    }
-    margin-top: 8px;
-  }
-  p,
-  i {
-    @include mQ(768px) {
-      float: left;
-    }
-    text-align: center;
-    color: white;
-    margin-bottom: 0;
-  }
-  .header-grid {
-    @include mQ(768px){
-      width: 21%;
-    }
-    color: $orange;
-    font-weight: bold;
-    padding-top: 8px;
-  }
-  .flex-font {
-    @include mQ(768px) {
-      width: 50%;
-    }
-    @include mQ(3000px, 769px) {
-      font-size: 0.7rem;
-    }
-  }
-}
-
-#featured-speakers {
-  @include mQ(768px) {
-    height: 180vh;
-  }
-  height: 145vh;
-  h2 {
-    font-family: $fontFam2;
-    margin-top: 55px;
-    text-align: center;
-  }
-  .line {
-    border-top: 2px solid $orange;
-    width: 5%;
-    margin-left: 47.5%;
-  }
-  ul {
-    @include mQ(768px) {
-      dislpay: flex;
-      flex-direction: column;
-      margin-left: 15%;
-    }
-  }
-  li {
-    @include mQ(3000px, 769px) {
-      @include grid(2, 5%);
-      margin-top: 60px;
-      padding-bottom: 10px;
-      &:nth-child(even) {
-        margin-right: 15%;
-      }
-      &:nth-child(odd) {
-        margin-left: 15%;
-      }
-      h4 {
-        font-weight: bold;
-        font-size: 0.9rem;
-      }
-      small {
-        font-size: 0.5rem;
-        color: $orange;
-      }
-      hr {
-        width: 10%;
-      }
-      p {
-        font-size: 0.7rem;
-      }
-      h4,
-      p {
-        margin-left: 10px;
-      }
-    }
-    @include mQ(768px) {
-      margin-top: 40px;
-      h4,
-      p {
-        margin-left: 20px;
-        font-size: 0.6rem;
-      }
-      img {
-        width: 50px;
-        height: 50px;
-      }
-      .grid-shadow-img {
-        top: -15px;
-        left: -15px;
-        z-index: -1;
-        img {
-          width: 25px;
-          height: 25px;
-        }
-      }
-    }
-    .flex-list {
-      display: flex;
-    }
-    img {
-      width: 100px;
-      height: 100px;
-    }
-    .grid-shadow-img {
-      top: -30px;
-      left: -30px;
-      z-index: -1;
-      width: 50px;
-    }
-  }
-}
-
-footer {
-  background-color: #272a31;
-  margin-top: 10px;
-  margin-right: 0;
-
-  h2 {
-    @include mQ(818px, 768px) {
-      width: 100%;
-    }
-    font-family: $fontFam2;
-    color: rgb(187, 183, 183);
-    text-align: center;
-  }
-  .line {
-    border-top: 2px solid $orange;
-    width: 5%;
-    margin-left: 47.5%;
-  }
-  ul {
-    display: flex;
-    margin: 0 10%;
-    margin-top: 40px;
-  }
-  li {
-    color: rgb(95, 95, 95);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: (70% - (4 * 3%) / 5);
-    margin-right: 3%;
-    font-size: 2rem;
-    margin-bottom: 40px;
-    @include mQ(768px) {
-      font-size: 2rem;
-    }
   }
 }
 // About Page
-.main-bg-about{
+.main-bg-about {
   @include mQ(540px) {
     height: 100vh;
   }
+
   border-bottom: 2px solid #f3f3f3;
   z-index: 1;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.7),
       rgb(255, 255, 255, 0.7)
@@ -461,362 +976,9 @@ footer {
   margin-bottom: 0;
 }
 
-.text-bg-about {
-  padding-top: 30px;
-  letter-spacing: 7px; 
-  text-align: center;
-  h2 {
-    @include mQ(540px) {
-      font-size: 1.5rem;
-
-    }
-    color: $orange;
-    font-family: $fontFam1;
-    font-weight: bold;
-    font-size: 3rem;
-  }
-}
 .line-bg {
   border-top: 2px solid $orange;
   z-index: 2;
   width: 5%;
   margin-left: 47.5%;
-}
-
-.box-on-screen-about {
-  @include mQ(500px) {
-   max-height: 50vh;
-   overflow: hidden; 
-  }
-  @include mQ(768px) {
-    width: 80%;
-    margin-left: 10%;
-  }
-  font-family: $fontFam1;
-  z-index: 2;
-  background-color: white;
-  width: 60%;
-  margin-left: 20%;
-  border: 2px solid #b3b3b3;
-  margin-top: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  p {
-    margin: 0 10% 1px 10%;
-    font-size: 0.8rem;
-  }
-  .hidden-text-rm{
-    margin-top: 10px;
-    @include mQ(3000px, 540px) {
-      display: none;
-    }
-  }
-  .hidden-text{
-    @include mQ(540px){
-      display:none;
-
-    }
-  }
-}
-.under-box{
-  text-align: center;
-  margin-top: 30px;
-  p{
-    margin: 0;
-    font-size: .8rem;
-  }
-  a{
-    font-weight: bold;
-    text-decoration: underline;
-  }
-}
-
-#logo{
-  border-bottom: 2px solid #f3f3f3;
-  h2 {
-    padding-top: 30px;
-    font-family: $fontFam2;
-    text-align: center;
-    font-size: 1.6rem;
-  }
-  .line {
-    border-top: 2px solid $orange;
-    z-index: 2;
-    width: 5%;
-    margin-left: 47.5%;
-  }
-  .logo-text{
-    margin-top: 40px;
-    font-size: .8rem;
-    width: 60%;
-    margin-left: 20%;
-    text-align: center;
-  }
-  .logo-img-card{
-    margin-top: 30px;
-    margin-bottom: 35px;
-    width: 30%;
-    margin-left: 35%;
-    border: 2px solid #f3f3f3;
-    img{
-      width: 90%;
-      margin: 2.5% 5%;
-    }
-  }
-}
-
-#previous-medusa{
-  @include mQ(767px){
-      height: 110vh;
-  }
-  height: 90vh;
-  h2 {
-    padding-top: 30px;
-    font-family: $fontFam2;
-    text-align: center;
-    font-size: 1.6rem;
-  }
-  .line {
-    border-top: 2px solid $orange;
-    z-index: 2;
-    width: 5%;
-    margin-left: 47.5%;
-  }
-  .logo-text{
-    margin-top: 40px;
-    font-size: .8rem;
-    width: 60%;
-    margin-left: 20%;
-    text-align: center;
-  }
-  ul{ 
-    @include mQ(767px){
-      padding-top: 20px;
-    }
-    padding-top: 45px;
-  }
-  li{
-    @include mQ(3000px, 768px){
-      @include grid(2, 5%);
-      height: 180px;
-    }
-    @include mQ(767px){
-      width: 80%;
-      margin-left: 10%;
-      margin-bottom: 20px;
-    }
-    padding-top: 50px;
-    color: white;
-    text-align: center;
-    p{
-      font-family: $fontFam1;
-      margin: 3px 5px 10px 5px;
-    }
-  }
-  .bg1{
-    background: linear-gradient(
-      to bottom,
-      rgba(247, 48, 48, 0.596),
-      rgba(247, 48, 48, 0.596)
-    ),
-    url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/17f0939e-6a31-4b53-b936-6683b13424f0/d4y5w1h-61fc707c-a05e-430d-93b3-cf3f7f6feb84.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMTdmMDkzOWUtNmEzMS00YjUzLWI5MzYtNjY4M2IxMzQyNGYwXC9kNHk1dzFoLTYxZmM3MDdjLWEwNWUtNDMwZC05M2IzLWNmM2Y3ZjZmZWI4NC5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.6jqahdpazu-x5S99Qslw5TCz4cfscx8WnHQSReKYqgw);
-    background-position: center;
-    background-size: cover;
-  }
-  .bg2{
-    background: linear-gradient(
-      to bottom,
-      rgba(247, 48, 48, 0.596),
-      rgba(247, 48, 48, 0.596)
-    ),
-    url(https://image.shutterstock.com/image-illustration/hand-drawn-medusa-skull-black-600w-1495755284.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-}
-
-// Tickets Page
-
-#step-1{
-  background-color: #eeeeee;
-  height: 90vh;
-  h2 {
-    padding-top: 30px;
-    font-family: $fontFam2;
-    text-align: center;
-    font-size: 1.6rem;
-  }
-  p {
-    @include mQ(845px){
-      font-size: 0.6rem;
-    }
-    margin: 0;
-    font-size: 0.7rem;
-  }
-  span {
-    @include mQ(845px){
-      font-size: 0.7rem;
-    }
-    color: $orange;
-    margin-right: 20px;
-    font-size: 0.8rem;
-  }
-  .line {
-    border-top: 2px solid $orange;
-    z-index: 2;
-    width: 3%;
-    margin-left: 48.5%;
-  }
-  .round-border{
-    @include mQ(1077px){
-      width: 40%;
-      margin-left: 30%;
-    }
-    @include mQ(889px){
-      width: 42%;
-      margin-left: 29%;
-    }
-    @include mQ(744px){
-      width: 45%;
-      margin-left: 27.5%;
-    }
-    padding: 5px 12px;
-    margin-top: 40px;
-    margin-left: 33.5%;
-    width: 33%;
-    border: 1px solid lightgrey;
-    border-radius: 100px;
-  }
-  th {
-    @include mQ(889px){
-      padding: 7px 14px;
-      font-size: .6rem;
-    }
-    @include mQ(490px){
-      padding: 5px 10px;
-      font-size: .5rem;
-    }
-    border: 1px solid lightgrey;
-    padding: 10px 20px;
-    text-align: center;
-    font-size: .7rem;
-  }
-  .orange {
-    color: $orange;
-  }
-  table{
-    border:3px solid $orange;
-    margin: 30px auto;
-    background-color: white;
-  }
-  thead {
-    background-color: #eeeeee;
-  }
-  
-}
-.half-page-icon {
-  margin-left: 49%;
-  margin-top: -25px;
-  font-size: 2rem;
-  color: $orange;
-  z-index: 3;
-}
-
-#step-2{
-  background-color: white;
-  height: 100vh;
-  h2 {
-    padding-top: 30px;
-    font-family: $fontFam2;
-    text-align: center;
-    font-size: 1.6rem;
-  }
-  p {
-    @include mQ(845px){
-      font-size: 0.6rem;
-    }
-    margin: 0;
-    font-size: 0.7rem;
-  }
-  span {
-    @include mQ(845px){
-      font-size: 0.7rem;
-    }
-    color: $orange;
-    margin-right: 20px;
-    font-size: 0.8rem;
-  }
-  .orange {
-    color: $orange;
-  }
-  .line {
-    border-top: 2px solid $orange;
-    z-index: 2;
-    width: 3%;
-    margin-left: 48.5%;
-  }
-  .round-border{
-    @include mQ(1160px){
-      width: 40%;
-      margin-left: 30%;
-    }
-    @include mQ(966px){
-      width: 42%;
-      margin-left: 29%;
-    }
-    @include mQ(768px){
-      width: 45%;
-      margin-left: 27.5%;
-    }
-    padding: 5px 12px;
-    margin-top: 40px;
-    margin-left: 33.5%;
-    width: 33%;
-    border: 1px solid lightgrey;
-    border-radius: 100px;
-  }
-  th {
-    @include mQ(889px){
-      padding: 7px 44px;
-      font-size: .6rem;
-    }
-    @include mQ(490px){
-      padding: 5px 20px;
-      font-size: .6rem;
-    }
-    border: 1px solid lightgrey;
-    padding: 10px 60px;
-    text-align: center;
-    font-size: .7rem;
-    
-  }
-  table{
-    border:3px solid #272a31;
-    margin: 30px auto;
-    background-color: white;
-    i {
-      font-size: 1.5rem;
-    }
-    input {
-      margin: 5px;
-    }
-  }
-  thead {
-    background-color: #eeeeee;
-  }
-  .butn-group{
-    margin: 60px 25%;
-    button{
-      @include mQ(768px){
-      font-size: 0.6rem;
-      }
-      @include mQ(768px){
-        font-size: 0.5rem;
-        padding: 3px;
-        }
-
-    }
-    
-  }
 }
