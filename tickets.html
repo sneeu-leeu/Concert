@@ -22,7 +22,7 @@
         <li><a class="text-reset" href="#">English</a></li>
         <li><a href="#">My Page</a></li>
         <li><a href="#">Logout</a></li>
-        </div>
+      </ul>
 
     </nav>
     <!-- Bottom Nav -->
@@ -53,13 +53,11 @@
         <p><span><i class="fas fa-gem"></i> Step1</span> Please select the session in which you want to rock</p>
       </div>
       <table>
-        <tr>
-          <thead>
-            <th>Ticket</th>
-            <th>One-Day-Ticket</th>
-            <th colspan="2">Two-Day-Ticket</th>
-            <th>Persius & Athena</th>
-          </thead>
+        <tr class="thead">
+          <th>Ticket</th>
+          <th>One-Day-Ticket</th>
+          <th colspan="2">Two-Day-Ticket</th>
+          <th>Persius & Athena</th>
         </tr>
         <tr>
           <th>Date</th>
@@ -79,10 +77,14 @@
         </tr>
         <tr>
           <th>Students</th>
-          <th class="orange">ZAR 600 <br> <input type="radio" id="one-day-tick-1" name="price-stud" value="Zar800"></th>
-          <th class="orange">ZAR 600 <br> <input type="radio" id="one-day-tick-2" name="price-stud" value="Zar800"></th>
-          <th class="orange">ZAR 1000 <br> <input type="radio" id="2-day-tick-1" name="price-stud" value="Zar800"></th>
-          <th class="orange">ZAR 600 <br> <input type="radio" id="2-day-tick-2" name="price-stud" value="Zar800"></th>
+          <th class="orange">ZAR 600 <br> <input type="radio" id="one-day-tick-1-stu" name="price-stud" value="Zar800">
+          </th>
+          <th class="orange">ZAR 600 <br> <input type="radio" id="one-day-tick-2-stu" name="price-stud" value="Zar800">
+          </th>
+          <th class="orange">ZAR 1000 <br> <input type="radio" id="2-day-tick-1-stu" name="price-stud" value="Zar800">
+          </th>
+          <th class="orange">ZAR 600 <br> <input type="radio" id="2-day-tick-2-stu" name="price-stud" value="Zar800">
+          </th>
         </tr>
       </table>
     </section>
@@ -99,35 +101,34 @@
         <p><span><i class="fas fa-gem"></i> Step1</span> Please select the method you want to buy your ticket with</p>
       </div>
       <table>
-        <tr>
-          <thead>
-            <th colspan=4>Secure online payment</th>
-          </thead>
+
+        <tr class="thead">
+          <th colspan=4>Secure online payment</th>
         </tr>
+
         <tr>
-          <th class="orange"><i class="fab fa-cc-mastercard"></i><br> <input type="radio" id="one-day-tick-1"
+          <th class="orange"><i class="fab fa-cc-mastercard"></i><br> <input type="radio" id="one-day-tick-1-nex"
               name="price-adult" value="Zar800">
           </th>
-          <th class="orange"><i class="fab fa-cc-visa"></i><br> <input type="radio" id="one-day-tick-2"
+          <th class="orange"><i class="fab fa-cc-visa"></i><br> <input type="radio" id="one-day-tick-2-nex"
               name="price-adult" value="Zar800">
           </th>
-          <th class="orange"><i class="fab fa-paypal"></i><br> <input type="radio" id="2-day-tick-1" name="price-adult"
-              value="Zar800"></th>
-          <th class="orange"><i class="fab fa-bitcoin"></i> <br> <input type="radio" id="2-day-tick-2"
+          <th class="orange"><i class="fab fa-paypal"></i><br> <input type="radio" id="2-day-tick-1-nex"
+              name="price-adult" value="Zar800"></th>
+          <th class="orange"><i class="fab fa-bitcoin"></i> <br> <input type="radio" id="2-day-tick-2-nex"
               name="price-adult" value="Zar800"></th>
         </tr>
       </table>
       <table class=table-2>
-        <tr>
-          <thead>
-            <th colspan=4>Cash payments can be made at:</th>
-          </thead>
+        <tr class="thead">
+          <th colspan=4>Cash payments can be made at:</th>
         </tr>
         <tr>
           <th>Makro</th>
           <th>Spar</th>
           <th>Gypsy</th>
           <th>Ska Clothing</th>
+        </tr>
       </table>
 
       <div class="butn-group d-flex w-50 justify-content-around">
@@ -151,10 +152,11 @@
         </li>
         <li><i class="fab fa-angellist"></i>
         </li>
-        <li><i class="fab fa-bitcoin"></i></i>
+        <li><i class="fab fa-bitcoin"></i>
         </li>
       </ul>
     </div>
   </footer>
 </body>
+
 </html>
