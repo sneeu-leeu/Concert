@@ -25,8 +25,10 @@ footer {
 
   ul {
     display: flex;
-    margin: 0 10%;
+    margin-left: 25%;
     margin-top: 40px;
+    align-content: center;
+    width: 75%;
   }
 
   li {
@@ -109,7 +111,7 @@ footer {
   letter-spacing: 7px;
   text-align: center;
 
-  h2 {
+  h1 {
     @include mQ(540px) {
       font-size: 1.5rem;
     }
@@ -124,7 +126,7 @@ footer {
 .box-on-screen-about {
   @include mQ(500px) {
     max-height: 50vh;
-    overflow: hidden;
+    overflow: scroll;
   }
 
   @include mQ(768px) {
@@ -165,11 +167,11 @@ footer {
 
 #main-program {
   @include mQ(768px) {
-    height: 110vh;
+    height: 520px;
   }
 
   @include mQ(520px) {
-    height: 80vh;
+    height: 395px;
   }
 
   background-image: url(https://cdn.cp.adobe.io/content/2/dcx/9201c10f-8b09-4fa4-a15b-cb0b102da3cb/rendition/preview.jpg/version/1/format/jpg/dimension/width/size/1200);
@@ -177,7 +179,7 @@ footer {
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: contain;
-  height: 85vh;
+  height: 420px;
   width: 100%;
 
   h2,
@@ -285,10 +287,10 @@ footer {
 
 #featured-speakers {
   @include mQ(768px) {
-    height: 180vh;
+    height: 790px;
   }
 
-  height: 145vh;
+  height: 700px;
 
   h2 {
     font-family: $fontFam2;
@@ -385,13 +387,20 @@ footer {
 
 #step-1 {
   background-color: #eee;
-  height: 90vh;
+  height: 520px;
+  padding-top: 40px;
 
   h1 {
+    font-size: 1.5rem;
+    padding: 0 auto;
+    text-align: center;
+  }
+
+  h2 {
     padding-top: 30px;
     font-family: $fontFam2;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   p {
@@ -504,7 +513,7 @@ footer {
 
 #step-2 {
   background-color: white;
-  height: 100vh;
+  height: 550px;
 
   h2 {
     padding-top: 30px;
@@ -559,6 +568,16 @@ footer {
       margin-left: 27.5%;
     }
 
+    @include mQ(500px) {
+      width: 75%;
+      margin-left: 12.5%;
+    }
+
+    @include mQ(450px) {
+      width: 85%;
+      margin-left: 7.5%;
+    }
+
     padding: 5px 12px;
     margin-top: 40px;
     margin-left: 33.5%;
@@ -610,20 +629,20 @@ footer {
         font-size: 0.6rem;
       }
 
-      @include mQ(768px) {
+      @include mQ(382px) {
         font-size: 0.5rem;
-        padding: 3px;
       }
+
     }
   }
 }
 
 #previous-medusa {
   @include mQ(767px) {
-    height: 110vh;
+    height: 420px;
   }
 
-  height: 90vh;
+  height: 450px;
 
   h2 {
     padding-top: 30px;
@@ -658,13 +677,13 @@ footer {
   li {
     @include mQ(3000px, 768px) {
       @include grid(2, 5%);
-
       height: 180px;
     }
 
     @include mQ(767px) {
       width: 80%;
       margin-left: 10%;
+      padding-top: 10px;
       margin-bottom: 20px;
     }
 
@@ -799,12 +818,16 @@ footer {
 }
 
 .main-bg {
-  @include mQ(668px) {
-    height: 90vh;
+  @include mQ(500px) {
+    height: 430px;
+  }
+
+  @include mQ(668px, 501px) {
+    height: 460px;
   }
 
   @include mQ(768px, 669px) {
-    height: 100vh;
+    height: 520px;
   }
 
   z-index: 1;
@@ -819,16 +842,16 @@ footer {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  height: 140vh;
+  height: 650px;
   margin-bottom: 0;
   // background section
   .bg-section {
     @include mQ(768px) {
-      height: 20vh;
+      height: 100px;
     }
 
     z-index: 3;
-    height: 30vh;
+    height: 150px;
     width: 70%;
     display: block;
     position: relative;
@@ -946,7 +969,11 @@ footer {
 // About Page
 .main-bg-about {
   @include mQ(540px) {
-    height: 100vh;
+    height: 500px;
+  }
+
+  @include mQ(768px, 541px) {
+    height: 700px;
   }
 
   border-bottom: 2px solid #f3f3f3;
@@ -962,7 +989,7 @@ footer {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  height: 120vh;
+  height: 650px;
   margin-bottom: 0;
 }
 

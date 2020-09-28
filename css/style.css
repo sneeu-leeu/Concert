@@ -162,8 +162,10 @@ footer .line {
 }
 footer ul {
   display: flex;
-  margin: 0 10%;
+  margin-left: 25%;
   margin-top: 40px;
+  align-content: center;
+  width: 75%;
 }
 footer li {
   color: #5f5f5f;
@@ -238,14 +240,14 @@ footer li {
   letter-spacing: 7px;
   text-align: center;
 }
-.text-bg-about h2 {
+.text-bg-about h1 {
   color: #ec5242;
   font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: 3rem;
 }
 @media screen and (max-width: 540px) {
-  .text-bg-about h2 {
+  .text-bg-about h1 {
     font-size: 1.5rem;
   }
 }
@@ -265,7 +267,7 @@ footer li {
 @media screen and (max-width: 500px) {
   .box-on-screen-about {
     max-height: 50vh;
-    overflow: hidden;
+    overflow: scroll;
   }
 }
 @media screen and (max-width: 768px) {
@@ -298,17 +300,17 @@ footer li {
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: contain;
-  height: 85vh;
+  height: 420px;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
   #main-program {
-    height: 110vh;
+    height: 520px;
   }
 }
 @media screen and (max-width: 520px) {
   #main-program {
-    height: 80vh;
+    height: 395px;
   }
 }
 #main-program h2,
@@ -417,11 +419,11 @@ footer li {
 }
 
 #featured-speakers {
-  height: 145vh;
+  height: 700px;
 }
 @media screen and (max-width: 768px) {
   #featured-speakers {
-    height: 180vh;
+    height: 790px;
   }
 }
 #featured-speakers h2 {
@@ -512,13 +514,19 @@ footer li {
 
 #step-1 {
   background-color: #eee;
-  height: 90vh;
+  height: 520px;
+  padding-top: 40px;
+}
+#step-1 h1 {
+  font-size: 1.5rem;
+  padding: 0 auto;
+  text-align: center;
 }
 #step-1 h2 {
   padding-top: 30px;
   font-family: "cocogoosedemibold";
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 #step-1 p {
   margin: 0;
@@ -597,9 +605,6 @@ footer li {
   margin: 30px auto;
   background-color: white;
 }
-#step-1 thead {
-  background-color: #eee;
-}
 
 .grid-list-img {
   width: 100px;
@@ -632,7 +637,7 @@ footer li {
 
 #step-2 {
   background-color: white;
-  height: 100vh;
+  height: 550px;
 }
 #step-2 h2 {
   padding-top: 30px;
@@ -694,6 +699,18 @@ footer li {
     margin-left: 27.5%;
   }
 }
+@media screen and (max-width: 500px) {
+  #step-2 .round-border {
+    width: 75%;
+    margin-left: 12.5%;
+  }
+}
+@media screen and (max-width: 450px) {
+  #step-2 .round-border {
+    width: 85%;
+    margin-left: 7.5%;
+  }
+}
 #step-2 th {
   border: 1px solid lightgrey;
   padding: 10px 60px;
@@ -734,19 +751,18 @@ footer li {
     font-size: 0.6rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 382px) {
   #step-2 .butn-group button {
     font-size: 0.5rem;
-    padding: 3px;
   }
 }
 
 #previous-medusa {
-  height: 90vh;
+  height: 450px;
 }
 @media screen and (max-width: 767px) {
   #previous-medusa {
-    height: 110vh;
+    height: 420px;
   }
 }
 #previous-medusa h2 {
@@ -800,6 +816,7 @@ footer li {
   #previous-medusa li {
     width: 80%;
     margin-left: 10%;
+    padding-top: 10px;
     margin-bottom: 20px;
   }
 }
@@ -909,29 +926,34 @@ footer li {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  height: 140vh;
+  height: 650px;
   margin-bottom: 0;
 }
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 500px) {
   .main-bg {
-    height: 90vh;
+    height: 430px;
+  }
+}
+@media screen and (max-width: 668px) and (min-width: 501px) {
+  .main-bg {
+    height: 460px;
   }
 }
 @media screen and (max-width: 768px) and (min-width: 669px) {
   .main-bg {
-    height: 100vh;
+    height: 520px;
   }
 }
 .main-bg .bg-section {
   z-index: 3;
-  height: 30vh;
+  height: 150px;
   width: 70%;
   display: block;
   position: relative;
 }
 @media screen and (max-width: 768px) {
   .main-bg .bg-section {
-    height: 20vh;
+    height: 100px;
   }
 }
 .main-bg .bg-section::after {
@@ -978,7 +1000,7 @@ footer li {
   -webkit-background-clip: text;
   color: transparent;
 }
-.main-bg #main-content .text-bg h2 {
+.main-bg #main-content .text-bg h1 {
   font-family: "Lato", sans-serif;
   font-size: 4.2rem;
   font-weight: bold;
@@ -988,13 +1010,13 @@ footer li {
   letter-spacing: 5px;
 }
 @media screen and (max-width: 668px) {
-  .main-bg #main-content .text-bg h2 {
+  .main-bg #main-content .text-bg h1 {
     font-size: 1.8rem;
     line-height: 2rem;
   }
 }
 @media screen and (max-width: 501) and (min-width: 768px) {
-  .main-bg #main-content .text-bg h2 {
+  .main-bg #main-content .text-bg h1 {
     font-size: 2.2rem;
   }
 }
@@ -1050,12 +1072,17 @@ footer li {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  height: 120vh;
+  height: 650px;
   margin-bottom: 0;
 }
 @media screen and (max-width: 540px) {
   .main-bg-about {
-    height: 100vh;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 541px) {
+  .main-bg-about {
+    height: 700px;
   }
 }
 
