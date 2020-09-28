@@ -445,6 +445,16 @@ footer {
       margin-left: 27.5%;
     }
 
+    @include mQ(500px) {
+      width: 75%;
+      margin-left: 12.5%;
+    }
+
+    @include mQ(450px) {
+      width: 85%;
+      margin-left: 7.5%;
+    }
+
     padding: 5px 12px;
     margin-top: 40px;
     margin-left: 33.5%;
@@ -495,19 +505,19 @@ footer {
 }
 
 #small-nav {
-  position: relative;
 
   @include mQ(768px) {
     display: block;
   }
 
+  background-color: #272a31;
   display: none;
 
-  i {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+  button {
     font-size: 2rem;
+  }
+  li {
+    margin-left: 10px;
   }
 } // header End
 
@@ -966,7 +976,24 @@ footer {
     }
   }
 }
-// About Page
+
+.foot-2 {
+  img {
+    @include mQ(745px){
+      height: 70px;
+    }
+    width: 100px;
+    height: auto;
+  }
+
+  p {
+    @include mQ(745px){
+      font-size: 0.8rem;
+    }
+    
+  }
+}
+
 .main-bg-about {
   @include mQ(540px) {
     height: 500px;

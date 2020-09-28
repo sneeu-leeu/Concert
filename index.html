@@ -41,8 +41,23 @@
     </nav>
     <!-- Small Nav -->
     <nav id="small-nav">
-      <i class="fas fa-bars"></i>
+      <div class="dropdown">
+        <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dLabel">
+          <ul>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="#">Movement</a></li>
+            <li><a href="#">Sponsor</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="./tickets.html">Get Tickets</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
+    
   </header>
 
   <main>
@@ -251,6 +266,15 @@
         </li>
       </ul>
 
+  </footer>
+  <footer class="foot-2 bg-white">
+    <div class="d-flex justify-content-center">
+      <img class="mx-4" src="./img/images.png" alt="logo">
+      <div class="mr-4">
+        <p><i class="fas fa-copyright"></i> Copyright, 2000</p>
+        <p><small>Loco Jams and Medusa Festivals inc do not condone bad behaviour of any sort, refer to <a class="text-info" href="https://www.bible.com/en-GB/bible/111/GEN.1.NIV">THE BIBLE</a> for more info</small></p>
+      </div>
+    </div>
   </footer>
 
 

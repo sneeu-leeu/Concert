@@ -1,6 +1,8 @@
 # Concert
 This project consists of a HTML & CSS Capstone Project, based on an online website for a conference. It's a real-world-like project, built with business specifications.
 
+![screenshot](./img/screenshot.png)
+
 ## Project Requirements
 
 * It consists of 3 HTML pages:
