@@ -11,6 +11,7 @@ footer {
     @include mQ(818px, 768px) {
       width: 100%;
     }
+    
     width: 100%;
     font-family: $fontFam2;
     color: rgb(187, 183, 183);
