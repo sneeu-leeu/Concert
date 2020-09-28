@@ -387,7 +387,7 @@ footer {
   background-color: #eee;
   height: 90vh;
 
-  h2 {
+  h1 {
     padding-top: 30px;
     font-family: $fontFam2;
     text-align: center;
@@ -878,7 +878,7 @@ footer {
       -webkit-background-clip: text;
       color: transparent;
 
-      h2 {
+      h1 {
         @include mQ(668px) {
           font-size: 1.8rem;
           line-height: 2rem;
