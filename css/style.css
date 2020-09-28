@@ -146,6 +146,7 @@ footer {
   margin-right: 0;
 }
 footer h2 {
+  width: 100%;
   font-family: "cocogoosedemibold";
   color: #bbb7b7;
   text-align: center;
@@ -434,11 +435,12 @@ footer li {
 }
 
 #featured-speakers {
-  height: 700px;
+  margin-bottom: 10px;
+  height: 750px;
 }
 @media screen and (max-width: 768px) {
   #featured-speakers {
-    height: 790px;
+    height: 800px;
   }
 }
 #featured-speakers h2 {
@@ -788,7 +790,7 @@ footer li {
 }
 @media screen and (max-width: 767px) {
   #previous-medusa {
-    height: 420px;
+    height: 570px;
   }
 }
 #previous-medusa h2 {
@@ -844,6 +846,7 @@ footer li {
     margin-left: 10%;
     padding-top: 10px;
     margin-bottom: 20px;
+    height: 150px;
   }
 }
 #previous-medusa li p {

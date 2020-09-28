@@ -11,7 +11,7 @@ footer {
     @include mQ(818px, 768px) {
       width: 100%;
     }
-
+    width: 100%;
     font-family: $fontFam2;
     color: rgb(187, 183, 183);
     text-align: center;
@@ -304,10 +304,11 @@ footer {
 
 #featured-speakers {
   @include mQ(768px) {
-    height: 790px;
+    height: 800px;
   }
 
-  height: 700px;
+  margin-bottom: 10px;
+  height: 750px;
 
   h2 {
     font-family: $fontFam2;
@@ -664,7 +665,7 @@ footer {
 
 #previous-medusa {
   @include mQ(767px) {
-    height: 420px;
+    height: 570px;
   }
 
   height: 450px;
@@ -711,6 +712,7 @@ footer {
       margin-left: 10%;
       padding-top: 10px;
       margin-bottom: 20px;
+      height: 150px;
     }
 
     padding-top: 50px;
