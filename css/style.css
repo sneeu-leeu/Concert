@@ -294,6 +294,21 @@ footer li {
   }
 }
 
+.foot-2 img {
+  width: 100px;
+  height: auto;
+}
+@media screen and (max-width: 745px) {
+  .foot-2 img {
+    height: 70px;
+  }
+}
+@media screen and (max-width: 745px) {
+  .foot-2 p {
+    font-size: 0.8rem;
+  }
+}
+
 #main-program {
   background-image: url(https://cdn.cp.adobe.io/content/2/dcx/9201c10f-8b09-4fa4-a15b-cb0b102da3cb/rendition/preview.jpg/version/1/format/jpg/dimension/width/size/1200);
   background-position: center;
@@ -519,7 +534,6 @@ footer li {
 }
 #step-1 h1 {
   font-size: 1.5rem;
-  padding: 0 auto;
   text-align: center;
 }
 #step-1 h2 {
@@ -1073,21 +1087,6 @@ footer li {
 @media screen and (max-width: 500px) {
   .main-bg #main-content p.date {
     font-size: 0.9rem;
-  }
-}
-
-.foot-2 img {
-  width: 100px;
-  height: auto;
-}
-@media screen and (max-width: 745px) {
-  .foot-2 img {
-    height: 70px;
-  }
-}
-@media screen and (max-width: 745px) {
-  .foot-2 p {
-    font-size: 0.8rem;
   }
 }
 
