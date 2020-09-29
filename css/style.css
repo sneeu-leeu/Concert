@@ -147,7 +147,7 @@ footer {
 }
 footer h2 {
   width: 100%;
-  font-family: "cocogoosedemibold";
+  font-family: "cocogooseregular";
   color: #bbb7b7;
   text-align: center;
 }
@@ -243,7 +243,7 @@ footer li {
 }
 .text-bg-about h1 {
   color: #ec5242;
-  font-family: "Lato", sans-serif;
+  font-family: "cocogooseregular";
   font-weight: bold;
   font-size: 3rem;
 }
@@ -332,7 +332,7 @@ footer li {
 #main-program h2,
 #main-program h4 {
   padding-top: 30px;
-  font-family: "cocogoosedemibold";
+  font-family: "cocogooseregular";
   color: white;
   text-align: center;
 }
@@ -1029,8 +1029,9 @@ footer li {
   -webkit-background-clip: text;
   color: transparent;
 }
-.main-bg #main-content .text-bg h1 {
-  font-family: "Lato", sans-serif;
+.main-bg #main-content .text-bg h1,
+.main-bg #main-content .text-bg h2 {
+  font-family: "cocogooseregular";
   font-size: 4.2rem;
   font-weight: bold;
   margin: 0;
@@ -1039,13 +1040,15 @@ footer li {
   letter-spacing: 5px;
 }
 @media screen and (max-width: 668px) {
-  .main-bg #main-content .text-bg h1 {
+  .main-bg #main-content .text-bg h1,
+.main-bg #main-content .text-bg h2 {
     font-size: 1.8rem;
     line-height: 2rem;
   }
 }
 @media screen and (max-width: 501) and (min-width: 768px) {
-  .main-bg #main-content .text-bg h1 {
+  .main-bg #main-content .text-bg h1,
+.main-bg #main-content .text-bg h2 {
     font-size: 2.2rem;
   }
 }
@@ -1082,7 +1085,7 @@ footer li {
 }
 .main-bg #main-content p.date {
   margin-top: 20px;
-  font-family: "cocogoosedemibold";
+  font-family: "cocogooseregular";
   font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 0;

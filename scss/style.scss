@@ -13,7 +13,7 @@ footer {
     }
 
     width: 100%;
-    font-family: $fontFam2;
+    font-family: 'cocogooseregular';
     color: rgb(187, 183, 183);
     text-align: center;
   }
@@ -118,7 +118,7 @@ footer {
     }
 
     color: $orange;
-    font-family: $fontFam1;
+    font-family: 'cocogooseregular';
     font-weight: bold;
     font-size: 3rem;
   }
@@ -203,7 +203,7 @@ footer {
   h2,
   h4 {
     padding-top: 30px;
-    font-family: $fontFam2;
+    font-family: 'cocogooseregular';
     color: white;
     text-align: center;
   }
@@ -930,7 +930,8 @@ footer {
       -webkit-background-clip: text;
       color: transparent;
 
-      h1 {
+      h1,
+      h2 {
         @include mQ(668px) {
           font-size: 1.8rem;
           line-height: 2rem;
@@ -940,7 +941,7 @@ footer {
           font-size: 2.2rem;
         }
 
-        font-family: $fontFam1;
+        font-family: 'cocogooseregular';
         font-size: 4.2rem;
         font-weight: bold;
         margin: 0;
@@ -988,7 +989,7 @@ footer {
       }
 
       margin-top: 20px;
-      font-family: $fontFam2;
+      font-family: 'cocogooseregular';
       font-size: 1.8rem;
       font-weight: bold;
       margin-bottom: 0;
