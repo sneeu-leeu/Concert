@@ -1,6 +1,7 @@
 @import "reset";
 @import "variables";
 @import "mixins";
+@import "font";
 
 footer {
   background-color: #272a31;
@@ -13,7 +14,7 @@ footer {
     }
 
     width: 100%;
-    font-family: 'cocogooseregular';
+    font-family: cocogooseregular, serif;
     color: rgb(187, 183, 183);
     text-align: center;
   }
@@ -118,7 +119,7 @@ footer {
     }
 
     color: $orange;
-    font-family: 'cocogooseregular';
+    font-family: cocogooseregular, serif;
     font-weight: bold;
     font-size: 3rem;
   }
@@ -203,7 +204,7 @@ footer {
   h2,
   h4 {
     padding-top: 30px;
-    font-family: 'cocogooseregular';
+    font-family: cocogooseregular, serif;
     color: white;
     text-align: center;
   }
@@ -941,7 +942,7 @@ footer {
           font-size: 2.2rem;
         }
 
-        font-family: 'cocogooseregular';
+        font-family: cocogooseregular, serif;
         font-size: 4.2rem;
         font-weight: bold;
         margin: 0;
@@ -989,7 +990,7 @@ footer {
       }
 
       margin-top: 20px;
-      font-family: 'cocogooseregular';
+      font-family: cocogooseregular, serif;
       font-size: 1.8rem;
       font-weight: bold;
       margin-bottom: 0;
