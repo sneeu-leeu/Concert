@@ -502,7 +502,7 @@ footer li {
 }
 @media screen and (max-width: 768px) {
   #featured-speakers {
-    height: 930px;
+    height: 950px;
   }
 }
 #featured-speakers h2 {
@@ -683,8 +683,8 @@ footer li {
 }
 @media screen and (max-width: 490px) {
   #step-1 th {
-    padding: 5px 10px;
-    font-size: 0.5rem;
+    padding: 5px 5px;
+    font-size: 0.7rem;
   }
 }
 #step-1 .orange {
@@ -811,13 +811,13 @@ footer li {
 @media screen and (max-width: 889px) {
   #step-2 th {
     padding: 7px 44px;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 490px) {
   #step-2 th {
     padding: 5px 20px;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }
 #step-2 table {

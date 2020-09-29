@@ -306,7 +306,7 @@ footer {
 
 #featured-speakers {
   @include mQ(768px) {
-    height: 930px;
+    height: 950px;
   }
 
   margin-right: 20px;
@@ -490,8 +490,8 @@ footer {
     }
 
     @include mQ(490px) {
-      padding: 5px 10px;
-      font-size: 0.5rem;
+      padding: 5px 5px;
+      font-size: 0.7rem;
     }
 
     border: 1px solid lightgrey;
@@ -620,12 +620,12 @@ footer {
   th {
     @include mQ(889px) {
       padding: 7px 44px;
-      font-size: 0.6rem;
+      font-size: 0.8rem;
     }
 
     @include mQ(490px) {
       padding: 5px 20px;
-      font-size: 0.6rem;
+      font-size: 0.8rem;
     }
 
     border: 1px solid lightgrey;
