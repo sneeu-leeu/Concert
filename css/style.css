@@ -712,6 +712,7 @@ footer li {
 #small-nav {
   background-color: #272a31;
   display: none;
+  padding-left: 30px;
 }
 @media screen and (max-width: 768px) {
   #small-nav {
