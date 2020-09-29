@@ -608,11 +608,11 @@ footer li {
 }
 #step-1 p {
   margin: 0;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 @media screen and (max-width: 845px) {
   #step-1 p {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 }
 #step-1 span {
@@ -622,7 +622,7 @@ footer li {
 }
 @media screen and (max-width: 845px) {
   #step-1 span {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 #step-1 .line {
@@ -647,8 +647,8 @@ footer li {
 }
 @media screen and (max-width: 889px) {
   #step-1 .round-border {
-    width: 42%;
-    margin-left: 29%;
+    width: 48%;
+    margin-left: 26%;
   }
 }
 @media screen and (max-width: 744px) {
@@ -665,8 +665,8 @@ footer li {
 }
 @media screen and (max-width: 450px) {
   #step-1 .round-border {
-    width: 85%;
-    margin-left: 7.5%;
+    width: 95%;
+    margin-left: 2.5%;
   }
 }
 #step-1 th {
@@ -738,11 +738,11 @@ footer li {
 }
 #step-2 p {
   margin: 0;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 @media screen and (max-width: 845px) {
   #step-2 p {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 }
 #step-2 span {
@@ -752,7 +752,7 @@ footer li {
 }
 @media screen and (max-width: 845px) {
   #step-2 span {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 #step-2 .orange {
@@ -786,11 +786,11 @@ footer li {
 }
 @media screen and (max-width: 768px) {
   #step-2 .round-border {
-    width: 45%;
-    margin-left: 27.5%;
+    width: 55%;
+    margin-left: 22.5%;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 524px) {
   #step-2 .round-border {
     width: 75%;
     margin-left: 12.5%;
@@ -837,6 +837,9 @@ footer li {
 #step-2 .butn-group {
   margin: 60px 25%;
 }
+#step-2 .butn-group button {
+  width: 25%;
+}
 @media screen and (max-width: 768px) {
   #step-2 .butn-group button {
     font-size: 0.6rem;
@@ -844,7 +847,8 @@ footer li {
 }
 @media screen and (max-width: 382px) {
   #step-2 .butn-group button {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
+    width: 50%;
   }
 }
 
