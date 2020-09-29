@@ -378,7 +378,7 @@ footer {
       h4,
       p {
         margin-left: 20px;
-        font-size: .8rem;
+        font-size: 0.8rem;
       }
 
       img {
@@ -653,12 +653,9 @@ footer {
   }
 
   .butn-group {
-
-    
     margin: 60px 25%;
 
     button {
-      
       @include mQ(768px) {
         font-size: 0.6rem;
       }
