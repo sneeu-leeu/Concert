@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEDUSA 2021 - Ashes to Ashes</title>
+  <link rel="icon" type="image/png" href="./img/android-chrome-192x192.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/5036f34c07.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- Top Nav -->
+    <nav id="top-nav">
+      <ul class="text-white">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a class="text-reset" href="#">English</a></li>
+        <li><a href="#">My Page</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+
+    </nav>
+    <!-- Bottom Nav -->
+    <nav id="bot-nav">
+      <a href="index.html"><img src="img/images.png" alt="logo"></a>
+      <ul>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="#">Program</a></li>
+        <li><a href="#">Movement</a></li>
+        <li><a href="#">Sponsor</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="./tickets.html">Get Tickets</a></li>
+      </ul>
+    </nav>
+    <!-- Small Nav -->
+    <nav id="small-nav">
+      <div class="dropdown">
+        <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dLabel">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="#">Movement</a></li>
+            <li><a href="#">Sponsor</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="./tickets.html">Get Tickets</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="step-1">
+      <h1>Get Your Gear</h1>
+      <h2>Select Tickets</h2>
+      <div class="line">
+        <!-- just for border -->
+      </div>
+      <div class=round-border>
+        <p><span><i class="fas fa-gem"></i> Step1</span> Please select the session in which you want to rock</p>
+      </div>
+      <table>
+        <tr class="thead">
+          <th>Ticket</th>
+          <th>One-Day-Ticket</th>
+          <th colspan="2">Two-Day-Ticket</th>
+          <th>Persius & Athena</th>
+        </tr>
+        <tr>
+          <th>Date</th>
+          <th>20 April(Fri)</th>
+          <th>21 April(Sat)</th>
+          <th>20-21 April(Fri-Sat)</th>
+          <th>20-21 April(Fri-Sat)</th>
+        </tr>
+        <tr>
+          <th>Adults</th>
+          <th class="orange">ZAR 800 <br> <input type="radio" id="one-day-tick-1" name="price-adult" value="Zar800">
+          </th>
+          <th class="orange">ZAR 800 <br> <input type="radio" id="one-day-tick-2" name="price-adult" value="Zar800">
+          </th>
+          <th class="orange">ZAR 1200 <br> <input type="radio" id="2-day-tick-1" name="price-adult" value="Zar800"></th>
+          <th class="orange">ZAR 800 <br> <input type="radio" id="2-day-tick-2" name="price-adult" value="Zar800"></th>
+        </tr>
+        <tr>
+          <th>Students</th>
+          <th class="orange">ZAR 600 <br> <input type="radio" id="one-day-tick-1-stu" name="price-stud" value="Zar800">
+          </th>
+          <th class="orange">ZAR 600 <br> <input type="radio" id="one-day-tick-2-stu" name="price-stud" value="Zar800">
+          </th>
+          <th class="orange">ZAR 1000 <br> <input type="radio" id="2-day-tick-1-stu" name="price-stud" value="Zar800">
+          </th>
+          <th class="orange">ZAR 600 <br> <input type="radio" id="2-day-tick-2-stu" name="price-stud" value="Zar800">
+          </th>
+        </tr>
+      </table>
+    </section>
+    <div class="half-page-icon">
+      <i class="fas fa-headphones-alt"></i>
+    </div>
+    <section id="step-2">
+
+      <h2>Payment Method</h2>
+      <div class="line">
+        <!-- just for border -->
+      </div>
+      <div class=round-border>
+        <p><span><i class="fas fa-gem"></i> Step1</span> Please select the method you want to buy your ticket with</p>
+      </div>
+      <table>
+
+        <tr class="thead">
+          <th colspan=4>Secure online payment</th>
+        </tr>
+
+        <tr>
+          <th class="orange"><i class="fab fa-cc-mastercard"></i><br> <input type="radio" id="one-day-tick-1-nex"
+              name="price-adult" value="Zar800">
+          </th>
+          <th class="orange"><i class="fab fa-cc-visa"></i><br> <input type="radio" id="one-day-tick-2-nex"
+              name="price-adult" value="Zar800">
+          </th>
+          <th class="orange"><i class="fab fa-paypal"></i><br> <input type="radio" id="2-day-tick-1-nex"
+              name="price-adult" value="Zar800"></th>
+          <th class="orange"><i class="fab fa-bitcoin"></i> <br> <input type="radio" id="2-day-tick-2-nex"
+              name="price-adult" value="Zar800"></th>
+        </tr>
+      </table>
+      <table class=table-2>
+        <tr class="thead">
+          <th colspan=4>Cash payments can be made at:</th>
+        </tr>
+        <tr>
+          <th>Makro</th>
+          <th>Spar</th>
+          <th>Gypsy</th>
+          <th>Ska Clothing</th>
+        </tr>
+      </table>
+
+      <div class="butn-group d-flex w-50 justify-content-around">
+        <button type="button" class="btn btn-outline-secondary ">Buy Now</button>
+        <button type="button" class="btn btn-outline-secondary ">Book Tickets</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <h2>Partners</h2>
+    <div class="line">
+      <!-- just for border -->
+    </div>
+    <div>
+      <ul>
+        <li><i class="fab fa-symfony"></i>
+        </li>
+        <li><i class="fab fa-google"></i>
+        </li>
+        <li><i class="fas fa-piggy-bank"></i>
+        </li>
+        <li><i class="fab fa-angellist"></i>
+        </li>
+        <li><i class="fab fa-bitcoin"></i>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <footer class="foot-2 bg-white">
+    <div class="d-flex justify-content-center">
+      <img class="mx-4" src="./img/images.png" alt="logo">
+      <div class="mr-4">
+        <p><i class="fas fa-copyright"></i> Copyright, 2000</p>
+        <p><small>Loco Jams and Medusa Festivals inc do not condone bad behaviour of any sort, refer to <a class="text-info" href="https://www.bible.com/en-GB/bible/111/GEN.1.NIV">THE BIBLE</a> for more info</small></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/5036f34c07.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
