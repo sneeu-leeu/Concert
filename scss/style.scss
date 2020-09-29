@@ -306,9 +306,10 @@ footer {
 
 #featured-speakers {
   @include mQ(768px) {
-    height: 800px;
+    height: 930px;
   }
 
+  margin-right: 20px;
   margin-bottom: 10px;
   height: 750px;
 
@@ -377,7 +378,7 @@ footer {
       h4,
       p {
         margin-left: 20px;
-        font-size: 0.6rem;
+        font-size: .8rem;
       }
 
       img {

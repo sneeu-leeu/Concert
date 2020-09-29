@@ -496,12 +496,13 @@ footer li {
 }
 
 #featured-speakers {
+  margin-right: 20px;
   margin-bottom: 10px;
   height: 750px;
 }
 @media screen and (max-width: 768px) {
   #featured-speakers {
-    height: 800px;
+    height: 930px;
   }
 }
 #featured-speakers h2 {
@@ -568,7 +569,7 @@ footer li {
   #featured-speakers li h4,
 #featured-speakers li p {
     margin-left: 20px;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
   #featured-speakers li img {
     width: 50px;
